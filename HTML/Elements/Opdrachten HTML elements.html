@@ -89,31 +89,87 @@
         <dt>6. Laadt dit bestand in als een audio op het scherm.</dt>
         <p>Extra: Maak het leuker door de audio op repeat te zetten.
             Tip: gebruik controls attribute om audio af te spelen.</p>
-        <dd><audio src="explosie.mp3" type="audio/mp3"></audio></dd>
-        <p>Een audio bestand heeft verschillende formaten. Niet alle formaten worden
-            ondersteund door de browser. Hiervoor is een oplossing voor.</p>
-        <dt>7. Speel een audio bestand af met
-            <source> tag. Leg uit wat hier het voordeel
-            van is.</dt>
-        <dd></dd>
-        <dt>8. Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in
-            als een video op het scherm.</dt>
+        <dd><audio src="explosie.mp3" type="audio/mp3" controls autoplay loop muted preload="auto">
+                <p>Your browser doesn't support HTML5 audio.</p>
+            </audio>
+        </dd>
+        <p>Een audio bestand heeft verschillende formaten. Niet alle formaten worden ondersteund door de browser. Hier
+            is een oplossing voor.</p>
+        <dt>7. Speel een audio bestand af met &#60;source&#62; tag. Leg uit wat hier het voordeel van is.</dt>
+        <dd>
+            <audio controls>
+                <source src="explosie.mp3" type="audio/mp3">
+                <p>Your browser doesn't support HTML5 audio.</p>
+            </audio>
+            <br>
+            <p>Bij gebruik van meerdere source tags naar audio, video of een plaatje in verschillende formats, is het
+                voordeel dat als een browser het ene format niet kan lezen, het een andere source kan proberen. Dit
+                maakt je webpagina veelzijdiger.</p>
+        </dd>
+        <dt>8. Zoek een willekeurig video en sla dit op in je computer. Laadt dit bestand in als een video op het
+            scherm.</dt>
         <p>Tip: De video is veel groter dan het scherm. Zoek uit welke attribuut je voor de
             video element kan gebruiken om de grootte van de video aan te passen.</p>
-        <dd></dd>
-        <p>Een video bestand heeft verschillende formaten. Niet alle formaten worden
-            ondersteund door de browser. Hiervoor is een oplossing voor.
-            Speel een video bestand af met
-            <source> tag. Leg uit wat hier het voordeel van is.</p>
+        <dd>
+            <video src="rabbit320.mp4" controls>
+                <p>Your browser doesn't support HTML5 video.</p>
+            </video>
+        </dd>
+        <p>Een video bestand heeft verschillende formaten. Niet alle formaten worden ondersteund door de browser.
+            Hiervoor is een oplossing voor.
+            Speel een video bestand af met &#60;source&#62; tag. Leg uit wat hier het voordeel van is.</p>
+        <dd>
+            <video controls>
+                <source src="rabbit320.mp4" type="video/mp4">
+                <p>Your browser doesn't support HTML5 video.</p>
+            </video>
+            <p>Zelfde voordeel als hierboven beschreven, flexibiliteit.</p>
+        </dd>
         <h3>Lijsten</h3>
-        <p>Door gebruik te maken van lijsten in HTML kan je opsommingen eenvoudig
-            weergeven. Onderzoek de verschillende soorten lijsten en op welke wijze je deze
-            kunt toepassen.</p>
-        <dt>9. Maak gebruik van de verschillende soorten lijsten om het volgende resultaat
-            op je webpagina weer te geven.</dt>
-        <dd></dd>
-        <dt>10. Bouw een navigatiebalk door gebruik te maken uit een lijst dat bestaat uit de
-            volgende onderdelen:
+        <p>Door gebruik te maken van lijsten in HTML kan je opsommingen eenvoudig weergeven. Onderzoek de verschillende
+            soorten lijsten en op welke wijze je deze kunt toepassen.</p>
+        <dt>9. Maak gebruik van de verschillende soorten lijsten om het volgende resultaat op je webpagina weer te
+            geven.</dt>
+        <dd>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ol>
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ol>
+                    <li>Item 2a</li>
+                    <li>Item 2b</li>
+                </ol>
+                <li>Item 3</li>
+            </ol>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ul>
+                    <li>Item 2a</li>
+                    <li>Item 2b</li>
+                </ul>
+                <li>Item 3</li>
+            </ul>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <ol>
+                    <li>Item 2a</li>
+                    <li>Item 2b</li>
+                </ol>
+                <li>Item 3</li>
+            </ul>
+        </dd>
+        <dt>10. Bouw een navigatiebalk door gebruik te maken uit een lijst dat bestaat uit de volgende onderdelen:
             <ul>
                 <li>Tigers</li>
                 <li>Lions</li>
@@ -121,16 +177,144 @@
                 <li>Hippopotaumus</li>
             </ul>
         </dt>
-        <dd></dd>
+        <dd>
+            <ul>
+                <li><a href="#tigers">Tigers</a></li>
+                <li><a href="#lions">Lions</a></li>
+                <li><a href="#monkeys">Monkeys</a></li>
+                <li><a href="#hippopotamus">Hippopotamus</a></li>
+            </ul>
+        </dd>
         <dt>11. Creëer nu voor elk onderdeel een header en een bijbehorende stuk tekst en
             zorg ervoor dat door te klikken op de links in de navigatiebalk je gerefereerd
             wordt naar het bijbehorende onderdeel. Zie hieronder een voorbeeld:</dt>
-
-
-
-
-
-
+        <dd>
+            <h3 id="tigers">Tigers</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi eveniet temporibus fugit officia
+                similique enim assumenda natus ipsum provident. Corrupti aut nesciunt deserunt sunt esse, tempora quos
+                asperiores consequuntur ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore
+                reprehenderit iusto similique laborum officiis quidem suscipit deleniti, placeat impedit, hic vel
+                incidunt accusamus? Nostrum sint aspernatur quos facere iusto minus? Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Hic delectus consequuntur, vel perspiciatis, omnis necessitatibus nulla
+                voluptatem velit doloribus odit amet, deserunt possimus nemo dolorum quos! Ducimus at unde et. Lorem
+                ipsum dolor sit amet, consectetur adipisicing elit. Sequi quasi iste repudiandae, itaque excepturi
+                doloribus saepe fugit adipisci, animi magnam dignissimos eveniet quia ducimus? Hic voluptatum inventore
+                alias eveniet impedit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam neque corrupti
+                voluptate fugit consectetur asperiores perspiciatis dolorem quasi architecto eius similique totam
+                mollitia labore dolores, qui incidunt sunt voluptates corporis. Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Reprehenderit illum similique culpa sapiente saepe odit voluptatem, aut blanditiis,
+                dolores reiciendis eveniet. Animi nostrum temporibus voluptas ad minus cum quasi quaerat? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Natus deserunt exercitationem tempore assumenda tenetur
+                consectetur eveniet nemo atque! Rerum repudiandae minus illo id ex consectetur debitis natus voluptates,
+                rem incidunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius porro sit laborum incidunt
+                delectus voluptatibus consectetur molestias ipsam dignissimos quisquam commodi, ex provident debitis
+                sint praesentium sunt esse! Obcaecati, repellat!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga perferendis ab dolor blanditiis et
+                dolorum
+                quibusdam incidunt sapiente aliquam sed optio debitis, sunt autem perspiciatis quis consectetur atque
+                enim ullam!
+            </p>
+            <h3 id="lions">Lions</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi saepe aut, voluptatum omnis
+                accusantium ratione architecto quasi deserunt ut explicabo ipsum at vitae. Sint ea eveniet voluptate,
+                fugiat ullam ipsam? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quasi similique omnis
+                amet debitis deserunt delectus, repudiandae voluptates id! Atque, reiciendis voluptas? Recusandae facere
+                porro molestiae! Omnis necessitatibus obcaecati fugiat. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Fuga unde iusto expedita. Mollitia quos alias deserunt voluptate necessitatibus iure!
+                Nihil laboriosam quos modi quaerat dolorem accusamus beatae quis, reprehenderit voluptates. Lorem ipsum
+                dolor sit amet consectetur, adipisicing elit. Tempora sed voluptatibus officia ipsum, quia tempore
+                itaque! Officiis labore ducimus neque quod dignissimos impedit quae, iste molestias illo facilis ipsam
+                culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores dolorem earum voluptatum odit
+                eos consectetur architecto, aliquam, quaerat quam numquam, laboriosam illum rerum? Ipsa ducimus unde
+                officia, quisquam aliquid eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde
+                repudiandae eum facilis. Quaerat perferendis, cupiditate minima similique, at pariatur sed numquam vitae
+                maiores rem consectetur dolorum ullam ad itaque eum. Lorem, ipsum dolor sit amet consectetur adipisicing
+                elit. Repellendus asperiores nam perspiciatis eaque, accusantium unde. Quo similique sunt fuga nemo quae
+                in, alias distinctio voluptatum voluptatibus earum suscipit fugit iure. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Voluptatibus expedita labore, autem deleniti eos cupiditate facilis
+                facere, eaque vitae eveniet iusto amet dolore explicabo perspiciatis saepe nemo doloremque! Dignissimos,
+                facere.</p>
+            <h3 id="monkeys">Monkeys</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae quia est rerum, nisi, eligendi
+                reprehenderit provident ea dolore ducimus libero officiis dolor modi ut, facilis consequatur numquam
+                culpa eaque cum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, totam eius. Inventore
+                doloremque enim similique? Molestiae asperiores culpa animi ullam veniam magnam. Illo eum eligendi
+                officia et nostrum natus vel! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat aperiam
+                sunt nesciunt officia ipsam, tempore corporis nam. Nisi perspiciatis nihil, facilis harum illum natus
+                tempora aliquam voluptatem, perferendis hic debitis. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Repudiandae velit, culpa quas laboriosam expedita similique dicta eveniet asperiores dolorum
+                provident dolorem, earum laborum! Molestias non est id, aperiam laborum iure. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Dolore atque enim natus id amet error maxime accusantium alias explicabo
+                rem cumque, quidem ad dolorum velit. Fugiat cupiditate recusandae ab possimus. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Numquam deleniti earum dicta. Libero, earum, officia eveniet soluta
+                ad sequi eum accusantium magnam quam ratione neque dolor facilis ab rem a? Lorem ipsum, dolor sit amet
+                consectetur adipisicing elit. Aliquam soluta vel, eveniet minima pariatur facere, aut officiis odit
+                tempore nesciunt corrupti non quisquam consectetur aliquid fuga iste qui deleniti debitis. Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Reprehenderit eveniet praesentium maxime aliquid sit
+                cupiditate suscipit voluptatibus cum facilis magni iusto voluptas nemo ratione ullam molestiae et,
+                dolorum adipisci temporibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam porro nihil
+                minima dolor architecto eligendi quaerat pariatur rerum, optio blanditiis ipsum, dolore adipisci
+                doloribus neque! Odio iste cumque aperiam itaque. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Quos officia veniam, repudiandae libero blanditiis modi. Repellendus numquam sapiente quis fugiat
+                totam, reiciendis voluptatum odio explicabo? Eius qui mollitia suscipit fuga. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. A libero minima natus explicabo neque perspiciatis voluptates culpa
+                quaerat alias maxime tempore earum laboriosam optio provident, impedit numquam repellat placeat
+                nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non ab labore quidem saepe quam odit
+                possimus a dignissimos quas doloribus odio eveniet voluptatem distinctio aut animi architecto expedita,
+                maiores laboriosam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat quae error quisquam
+                a aperiam repellendus in modi eaque sed? Alias corporis aliquam necessitatibus maxime exercitationem!
+                Nihil aspernatur quia sequi a. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit maiores
+                rem repellendus quisquam corrupti similique minus qui, aut suscipit fuga soluta maxime. Aperiam nisi
+                possimus neque voluptatum illum, doloribus dignissimos! Lorem ipsum dolor sit amet consectetur,
+                adipisicing elit. Tempora ducimus vitae et, vero porro perspiciatis error maxime quibusdam aperiam
+                consectetur reiciendis? Dolores repudiandae error ab alias debitis adipisci fugit cum.</p>
+            <h3 id="hippopotamus">Hippopotamus</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque expedita minima veritatis dolorem earum
+                cupiditate enim laudantium dolorum et, numquam ipsa, doloribus officia. Quidem obcaecati illum qui
+                sapiente, voluptates accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+                deleniti sunt commodi atque nemo quo accusantium, assumenda aut repellat ea corporis, animi voluptatibus
+                fugit, nisi consequatur dolores. Eius, eos mollitia. Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Officiis magnam, autem possimus cum excepturi fugiat sed ducimus voluptas placeat sunt veritatis
+                laboriosam molestiae doloribus aliquid rem repellat eveniet. Obcaecati, ea. Lorem ipsum dolor sit, amet
+                consectetur adipisicing elit. Nemo consequuntur reiciendis quo nam. Cupiditate, corrupti rerum!
+                Praesentium reiciendis possimus, rem aliquid provident ipsum debitis officiis quae molestiae rerum
+                adipisci. Corrupti? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, minus tempora velit
+                laborum, nobis neque nemo modi nesciunt pariatur nam, sint facilis porro! Quo eius quae repellendus
+                fugit hic debitis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quis ipsa sed tempore
+                suscipit odio. Impedit praesentium adipisci, libero tempore, quis itaque porro nam corporis odit eos
+                corrupti, deleniti error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolores aliquam
+                odit architecto officiis esse voluptatum pariatur aspernatur nisi eaque, corporis commodi earum qui
+                accusamus sapiente fugiat, delectus dolorum. Qui? Lorem ipsum dolor sit amet consectetur, adipisicing
+                elit. Maiores debitis numquam odit corporis. Voluptates non deleniti, quibusdam consectetur autem aut
+                quos dicta odit quis! Facere harum odit illo cumque perferendis? Lorem ipsum dolor, sit amet consectetur
+                adipisicing elit. Non eligendi aliquid eos accusantium rem, mollitia ducimus minima accusamus nemo
+                magnam consequuntur veritatis laudantium? Praesentium iure pariatur rerum molestias quam quis? Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis obcaecati commodi fuga eius,
+                laudantium quae, officiis accusamus similique, odio voluptates eveniet ipsam fugit. Sapiente neque amet
+                eius ratione autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem doloremque maiores ea,
+                exercitationem unde asperiores consectetur beatae ipsam dolorem dolorum nisi praesentium esse labore
+                sapiente non nam tenetur voluptatibus velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Amet cumque dolores consequatur, sit quas excepturi ducimus accusantium tempora ex, autem doloribus sint
+                vero? Quae, vitae. Nesciunt mollitia necessitatibus sequi ullam. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Sunt tempora nihil temporibus suscipit dolorem incidunt deleniti corrupti voluptatum,
+                quibusdam earum nemo distinctio culpa neque nulla accusamus quas error veniam deserunt? Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Illo similique ea, molestiae eaque, voluptate natus, cum
+                nobis laborum provident iure laboriosam maiores! Consequatur ipsa provident assumenda ea blanditiis,
+                perferendis ipsum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores eaque magnam quaerat
+                consequatur ipsam ipsum, eveniet voluptatem modi neque omnis, nesciunt nihil minima voluptates possimus
+                nemo nisi doloremque laborum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut tempora
+                iure porro exercitationem blanditiis recusandae iste officiis nobis veritatis, molestiae adipisci
+                tempore eos odit ad rem consequatur perspiciatis est ipsum. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Necessitatibus autem dicta porro officia, sunt ducimus ipsum molestias aliquid, ipsa
+                recusandae voluptatum consequuntur quasi veritatis perspiciatis similique officiis assumenda minima
+                inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem veritatis ea iure tenetur
+                modi repellat, quibusdam voluptatibus magni laboriosam omnis, architecto consequatur, quae dolor vitae
+                ut praesentium provident obcaecati adipisci! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Beatae odit natus, quo rem magni temporibus! Voluptatem, exercitationem. Ex minus ad perspiciatis,
+                voluptate tempora illum maiores facere, molestias quae reiciendis quibusdam. Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Dolor quaerat, sed aut assumenda id velit sunt quam corporis sint quasi
+                laboriosam quidem tenetur a excepturi voluptatum error ipsum iusto tempora. </p>
+        </dd>
     </dl>
 </body>
 
