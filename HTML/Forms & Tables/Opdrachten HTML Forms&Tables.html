@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms & Tables</title>
+</head>
+
+<body>
+    <h1>HTML Forms</h1>
+    <p>HTML formulieren zijn de belangrijkste schakel tussen een gebruiker en een website
+        of een applicatie. Zij laten gebruikers toe gegevens naar websites te sturen. Meestal
+        zal dat naar de server zijn maar een webpagina kan de gegevens ook zelf
+        interpreteren.
+        Een HTML form bestaat uit een aantal elementen. Bijvoorbeeld textfields &#40;bestaande
+        uit één of meerdere regels&#41;, choices of buttons.</p>
+    <dl>
+        <dt>
+            1. Maak een HTML form waarbij de gebruiker zijn naam en achternaam in kan
+            vullen.
+        </dt>
+        <dd>
+            <br>
+            <form>
+                <label for="achternaam">Achternaam</label>
+                <input type="text" id="achternaam" name="Achternaam" value="achternaam">
+                <br>
+                <br>
+                <label for="voornaam">Voornaam</label>
+                <input type="text" id="voornaam" name="Voornaam" value="voornaam">
+            </form>
+        </dd>
+        <br>
+        <dt>2. Naast input text fields zijn er ook nog andere input fields.
+            Maak voor elk input field een voorbeeld.</dt>
+        <dd>
+            <ul>
+                <li>radiobutton <input type="radio" id="radio" value="klik"></li>
+                <li>checkbox <input type="checkbox" id="checkbox" value="klik"></li>
+                <li>password <input type="password" id="password" value="klik"></li>
+                <li>reset <input type="reset" id="reset" value="klik"></li>
+                <li>submit <input type="submit" id="submit" value="klik"></li>
+                <li>date <input type="date" id="date" value="klik"></li>
+                <li>search <input type="search" id="search" value="klik"></li>
+                <li>time <input type="time" id="time" value="klik"></li>
+                <li>hidden <input type="hidden" id="hidden" value="klik"></li>
+                <li>email <input type="email" id="email" value="klik"></li>
+            </ul>
+        </dd>
+        <dt>3. Maak een input email field met een submit knop.
+            tip: wat gebeurt er wanneer je op de submit knop clickt met een random text?</dt>
+        <dd><input type="email" id="email" value="klik"><input type="submit" id="submit" value="submit">
+            <br>
+            <br>
+            Bij mij gebeurt er niks volgens mij?</dd>
+        <br>
+        <dt>4. Een formulier kun je ook groeperen. Zie hieronder voor een voorbeeld:
+            Bouw dit voorbeeld na.</dt>
+        <dd>
+            <div style="background-color: lightgrey; width: 50%; padding: 10px;">
+                <div style="border-style: solid; border-width: 1px;">
+                    <h3 style="margin: 0px;">Persoonsgegevens</h3>
+                    <br>
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
+                    <br>
+                    <br>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
+                    <br>
+                    <br>
+                    <label for="voornaam">Geboortedatum</label>
+                    <input type="date" id="voornaam" name="Voornaam" value="voornaam">
+                    <br>
+                    <br>
+                    <label for="voornaam">Man</label>
+                    <input type="radio" id="radio" value="klik"><label for="voornaam">Vrouw</label>
+                    <input type="radio" id="radio" value="klik">
+                    <br>
+                    <br>
+                    <label for="achternaam">Postcode</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="postcode">
+                    <br>
+                    <br>
+                    <label for="achternaam">Adres</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="adres">
+                    <br>
+                    <br>
+                </div>
+                <br>
+                <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
+            </div>
+        </dd>
+        <br>
+        <dt>5. Naast input element heb je ook een select element. Hiermee kan je een
+            dropdown list maken. Maak een drop down list.</dt>
+        <dd><label for="cars">Choose a car:</label>
+            <select name="cars" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </dd>
+        <br>
+        <dt>6. We hebben nu geleerd hoe je dropdown list, radio buttons en checkboxes
+            maakt. Dit zijn 3 verschillende manieren om de gebruiker een keuze te laten
+            maken. Benoem voor dropdown list, radio buttons en checkboxes een situatie
+            waar je in kan gebruiken en leg dat uit?</dt>
+        <dd>
+            <ul>
+                <li>dropdown list: gebruik dit bij meerdere keuzemogelijkheden, bijvoorbeeld automerken.</li>
+                <li>radio button: handig bij een keuze tussen 2 of 3 opties, bijvoorbeeld man/vrouw.</li>
+                <li>checkboxes: bij een ja/nee antwoord, of om akkoord te gaan met bepaalde voorwaarden.</li>
+            </ul>
+        </dd>
+        <dt>7. Maak een reserveringsformulier om een sport te reserveren. In dit formulier
+            willen we graag het volgende weten:
+            <ul>
+                <li>Naam van de persoon</li>
+                <li>Of hij/zij lidmaatschap heeft</li>
+                <li>E-mail van de persoon</li>
+                <li>Type sport om te reserveren. Keuze uit: tafeltennis, badminton of squash</li>
+                <li>Datum en tijdstip om te reserveren</li>
+                <li>Een checkbox waarbij de gebruiker akkoord gaat met de reserveringsvoorwaarden</li>
+                <li>Een submit knop</li>
+            </ul>
+        </dt>
+        <dd>
+            <div style="background-color: lightgrey; width: 50%; padding: 10px;">
+                <div style="border-style: solid; border-width: 1px;">
+                    <h3 style="margin: 0px;">Reserveringsformulier</h3>
+                    <br>
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
+                    <br>
+                    <br>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
+                    <br>
+                    <br>
+                    <label for="achternaam">E-mail</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="e-mail">
+                    <br>
+                    <br>
+                    <label for="cars">Kies uw sport:</label>
+                    <select name="cars" id="cars">
+                        <option value="tafeltennis">Tafeltennis</option>
+                        <option value="badminton">Badminton</option>
+                        <option value="squash">Squash</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="voornaam">Datum en tijd</label>
+                    <input type="date" id="voornaam" name="Voornaam" value="datum"><input type="time" id="time"
+                        value="tijd">
+                    <br>
+                    <br>
+                    <label for="checkbox">Ik ga akkoord met de reserveringsvoorwaarden</label>
+                    <input type="checkbox" id="checkbox" value="klik">
+                    <br>
+                </div>
+                <br>
+                <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
+            </div>
+        </dd>
+        <br>
+        <dt>8. Maak een reserveringsformulier om een boek te reserveren. In dit formulier
+            willen we graag het volgende weten:
+            <ul>
+                <li>Naam van de persoon</li>
+                <li>Telefoonnummer</li>
+                <li>E-mail van de persoon</li>
+                <li>Naam van het boek</li>
+                <li>Aantal boeken om te reserveren. Het aantal moet minimaal 1 en maximaal 5
+                    zijn.</li>
+                <li>Een submit knop</li>
+            </ul>
+        </dt>
+        <dd>
+            <div style="background-color: lightgrey; width: 50%; padding: 10px;">
+                <div style="border-style: solid; border-width: 1px;">
+                    <h3 style="margin: 0px;">Reserveringsformulier</h3>
+                    <br>
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
+                    <br>
+                    <br>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
+                    <br>
+                    <br><label for="achternaam">Telefoonnummer</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="telefoonnummer">
+                    <br>
+                    <br>
+                    <label for="achternaam">E-mail</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="e-mail">
+                    <br>
+                    <br>
+                    <label for="achternaam">Naam van het boek</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="naam boek">
+                    <br>
+                    <br>
+                    <label for="cars">Aantal boeken:</label>
+                    <select name="cars" id="cars">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <br>
+                    <br>
+                    <label for="voornaam">Datum en tijd</label>
+                    <input type="date" id="voornaam" name="Voornaam" value="datum"><input type="time" id="time"
+                        value="tijd">
+                    <br>
+                    <br>
+                    <label for="checkbox">Ik ga akkoord met de reserveringsvoorwaarden</label>
+                    <input type="checkbox" id="checkbox" value="klik">
+                    <br>
+                </div>
+                <br>
+                <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
+            </div>
+        </dd>
+        <br>
+        <dt>9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd.</dt>
+        <dd>
+            <div style="background-color: lightgrey; width: 50%; padding: 10px;">
+                <div style="border-style: solid; border-width: 1px;">
+                    <h3 style="margin: 0px;">Schrijf je in voor de nieuwsbrief!</h3>
+                    <br>
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
+                    <br>
+                    <br>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
+                    <br>
+                    <br>
+                    <label for="achternaam">E-mail</label>
+                    <input type="text" id="achternaam" name="Achternaam" value="e-mail">
+                    <br>
+                    <br>
+                    <input type="checkbox" id="checkbox" value="klik"><label for="checkbox">Ik ga akkoord met de
+                        voorwaarden</label>
+                    <br>
+                </div>
+                <br>
+                <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
+            </div>
+        </dd>
+        <h1>HTML tables</h1>
+        <dt>10. Om een tabel te maken heb je de volgende elementen nodig. Geef voor elke element een definitie.
+            <ul>
+                <li>&#60;table&#62;: dit element omvat alle andere elementen in de tabel en is nodig om een tabel te
+                    maken.</li>
+                <li>&#60;thead&#62;: dit element omvat het deel van de tabel dat de header is, meestal de eerste rij van
+                    de tabel.</li>
+                <li>&#60;tbody&#62;: dit element omvat het deel van de tabel dat niet header of footer is, dit element
+                    zit in elke tabel ook als het niet expliciet gespecificeerd wordt. </li>
+                <li>&#60;tfoot&#62; dit element omvat het deel van de tabel dat de footer is, bijv een laatste rij
+                    waarin de andere rijen worden opgeteld.</li>
+                <li>&#60;th&#62;: table headers, deze cellen staan aan het begin van de rij of kolom en hebben een
+                    speciale opmaak.</li>
+                <li>&#60;tr&#62;: table row, eindigt de reeks van cellen zodat de rij wordt afgesloten. Voor een nieuwe
+                    rij open je een nieuw tr element en plaats je de td elementen daarbinnen.</li>
+                <li>&#60;td&#62;: table cell, elk td element maakt 1 cel, die naast elkaar komen te staan en zo de
+                    eerste rij vormen.</li>
+            </ul>
+        </dt>
+        <dt> 11. Maak een tabel met &#60;table&#62; element. Zie hieronder:</dt>
+        <dd>
+            <table style="background-color: lightgrey;">
+                <thead>
+                    <tr>
+                        <th>Voornaam</th>
+                        <th>Achternaam</th>
+                        <th>Leeftijd</th>
+                        <th>Telefoonnummer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>41</td>
+                        <td>0612345678</td>
+                    </tr>
+                    <tr>
+                        <td>Steven</td>
+                        <td>Smith</td>
+                        <td>32</td>
+                        <td>0612345678</td>
+                    </tr>
+                    <tr>
+                        <td>Alexander</td>
+                        <td>Beave</td>
+                        <td>16</td>
+                        <td>0612345678</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+        <br>
+        <dt>12. Maak een agenda tabel met &#60;table&#62; element. Zie hieronder:</dt>
+        <dd>
+            <table style="background-color: lightgrey;">
+                <thead>
+                    <tr>
+                        <th>MA</th>
+                        <th>DI</th>
+                        <th>WO</th>
+                        <th>DO</th>
+                        <th>VR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Afspraak met tandarts</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Sporten</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Huiswerk maken</td>
+                        <td>Werken</td>
+                        <td>Werken</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Afspraak met tandarts</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>Werken</td>
+                        <td>Bij vrienden</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+        <br>
+        <dt>13. Voor het maken van een tabel kan je ook gebruik maken van colspan en
+            rowspan attributen. Zoek uit wat colspan en rowspan attribuut doet en meet
+            het volgende:</dt>
+        <br>
+        <dd>
+            <table>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Sport</th>
+                        <th>Aantal recreanten</th>
+                        <th>Aantal competitiespelers</th>
+                        <th>Totaal deelnemers</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Racket sport</td>
+                        <td>Badminton</td>
+                        <td>10</td>
+                        <td>30</td>
+                        <td>40</td>
+                    </tr>
+                    <tr>
+                        <td>Tafeltennis</td>
+                        <td>59</td>
+                        <td>30</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td>Tennis</td>
+                        <td>159</td>
+                        <td>30</td>
+                        <td>189</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Ball sport</td>
+                        <td>Voetbal</td>
+                        <td>88</td>
+                        <td>40</td>
+                        <td>128</td>
+                    </tr>
+                    <tr>
+                        <td>Basketbal</td>
+                        <td>60</td>
+                        <td>40</td>
+                        <td>100</td>
+                    </tr>
+                    <tr>
+                        <td>Volleybal</td>
+                        <td>35</td>
+                        <td>20</td>
+                        <td>55</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+        <br>
+        <dt>14. Maak nu zelf een tabel met de elementen die je hiervoor hebt geleerd.</dt>
+        <dd>
+            <table>
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th>Voornaam</th>
+                        <th>Achternaam</th>
+                        <th>Leeftijd</th>
+                        <th>Telefoonnummer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>41</td>
+                        <td>0612345678</td>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td>Steven</td>
+                        <td>Smith</td>
+                        <td>32</td>
+                        <td>0612345678</td>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td>Alexander</td>
+                        <td>Beave</td>
+                        <td>16</td>
+                        <td>0612345678</td>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </tbody>
+            </table>
+        </dd>
+    </dl>
+</body>
+
+</html>

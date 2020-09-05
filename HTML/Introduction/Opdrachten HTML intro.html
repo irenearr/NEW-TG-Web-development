@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Intro opdrachten</title>
+</head>
+
+<body>
+    <h1>HTML Intro</h1>
+    <dl>
+        <dt>1. Wat is het verschil tussen het internet en het world wide web?</dt>
+        <dd>Internet is het fysieke netwerk, world wide web is de verzameling webpagina's die je via het netwerk deelt.
+        </dd>
+        <br>
+        <dt>2. Wat is het verschil tussen HTML, CSS en JavaScript?</dt>
+        <dd>HTML is als het skelet, de structuur van de website, CSS geeft de styling aan, en JavaScript is de taal voor
+            complexe
+            dingen op een website &#40;graphics, interactive maps, etc&#41;.</dd>
+        <br>
+        <dt>3. Wat is een HTML tag en een HTML element? Hoe open je een HTML tag en hoe sluit je een HTML tag. Maak
+            hiervoor voorbeelden en leg uit.</dt>
+        <dd>Een HTML tag is bijvoorbeeld &#60;p&#62; en een element is een opening tag, een closing tag, en de content,
+            bijv
+            &#60;p&#62;My cat is very cute&#60;/p&#62;<br>Resultaat: <p>My cat is very cute</p>
+        </dd>
+        <dt>4. HTML gebruikt basis tags om structuur op te bouwen. De &#60;html&#62;, &#60;head&#62; en &#60;body&#62;.
+            Geef voor elke element aan waarvoor het dient.</dt>
+        <dd>
+            <ul>
+                <li>&#60;html&#62; element dient ervoor om de site goed te laten werken, ookwel root element.</li>
+                <li>&#60;head&#62; element bevat een aantal standaard gegevens, de titel van de pagina en in dit element
+                    plaats je de styling.</li>
+                <li>&#60;body&#62; element bevat alle content die op de website wordt weergegeven.</li>
+            </ul>
+        </dd>
+        <dt>5. Op HTML elementen kun je attributen gebruiken. Wat zijn HTML attributen ? Geef minimaal 5 attributen en
+            maak voorbeelden
+            waar je de attributen in toepast.</dt>
+        <dd>Attributen geven extra informatie over elementen die je niet op de website terugziet. Voorbeelden:
+            <b>class="editor-note"</b> is een attribute in het element <i>&#60;p class&#61;&#34;editor-note&#34;&#62;My
+                cat is very cute&#60;/p&#62;</i>
+            en wordt gebruikt om het element te targeten met style information.
+            <br>Binnen het anchor element &#60;a&#62; gebruik je verschillende attributen:
+            <ul>
+                <li>het attribute <b>href</b> bevat het web adres van de link die je maakt met het &#60;a&#62; element.
+                </li>
+                <li>het attribute <b>title</b> bevat extra informatie over de link, zoals een beschrijving, die je te
+                    zien krijgt wanneer je met de
+                    muis over de link heen gaat.</li>
+                <li>het attribute <b>target</b> geeft aan waar de link geopend wordt; leeg = de link opent op dezelfde
+                    pagina,
+                    target&#61;&#34;&#95;blank&#34; = de link opent in een nieuw tabblad</li>
+                <li>Er zijn ook attributen zonder value, deze worden Boolean attributen genoemd. Voorbeeld:
+                    <br>het attribute <b>disabled</b> kun je geven aan formulier input elementen, zodat er niets
+                    ingevuld kan worden. Het vakje is
+                    dan meestal grijs gekleurd. Voorbeeld: &#60;input type&#61;&#34;text&#34; disabled&#62;</li>
+            </ul>
+        </dd>
+        <dt>6. Waarom is een goede HTML structuur belangrijk? Is <u>deze code</u> een goede structuur? Leg uit.</dt>
+        <dd>Dit is goede content, maar de structuur in de vorm van HTML elementen ontbreekt. Op de webpagina zal de
+            tekst niet op dezelfde
+            manier zijn opgemaakt als in het code bestand, de opmaak ontbreekt.</dd>
+        <br>
+        <dt>7. Wat is het verschil tussen inline en block elementen?</dt>
+        <dd>Block elementen vormen een zichtbaar blok op de website, op een nieuwe regel. Het zijn structuurelementen op
+            de pagina:
+            headings, paragrafen, lijsten, navigatiemenu's, footers.
+            <br>Inline elementen zitten in block elementen en omgeven alleen kleine stukjes content. Een inline element
+            begint niet op een nieuwe
+            regel, en zijn meestal van toepassing op tekst: anchor element, emphasis, strong, etc.</dd>
+        <br>
+        <dt>8. Wat betekent nesting? Codeer een voorbeeld met nesting erin.</dt>
+        <dd>Nesting betekent dat een element binnenin een ander element zit. Voorbeeld:
+            <p>my cat is <strong>very</strong> cute</p>
+        </dd>
+        <h3>Semantics</h3>
+        <dt>9. Sinds de komst van HTML5 zijn er elementen die betekenissen hebben. Wat wordt er bedoeld met HTML
+            semantics? Waarom is het gebruik
+            van semantics belangrijk?</dt>
+        <dd>Sommige HTML tags geven een bepaalde indicatie van het soort content dat ze bevatten, oftewel ze hebben een
+            extra betekenis.
+            Een &#60;h1&#62; tag geeft bijvoorbeeld aan dat de content van dat element de belangrijkste heading van die
+            pagina of sectie is.
+            Dat noemt men HTML semantics.
+            Door middel van correct gebruik van HTML semantics geven we een apparaat &#40;browser, smartphone, etc&#41;
+            de juiste informatie mee.</dd>
+
+        <p>● Semantic markup requires that HTML elements be used according to their intended purpose.
+            <br>● Semantic markup requires the separation of content and presentation.
+            <br>When writing semantic markup, the presentation of web page elements is kept completely separate and
+            distinct from the markup of the
+            content itself.
+            Semantic markup is the use of a markup language such as HTML to convey information about the meaning of each
+            element in a document
+            through proper selection of markup elements, and to maintain complete separation between the markup and the
+            visual presentation of
+            the elements contained in the document.
+            non-semantic elements don't have any information for the computer, such as div and span.
+            id and class attributes are often used to hint at the meaning of the content of non-semantic elements.</p>
+
+        <p>
+        <h4>Document Structure: semantic elements to be used instead of the <it>div</it> tag:</h4>
+        10. Wat voor content zou je in de volgende elementen gebruiken?
+        <ul>
+            <li>&#60;header&#62; used for a web page header which typically contains the site logo, heading elements,
+                and site
+                navigation.</li>
+            <li>&#60;footer&#62; used for a web page footer which typically contains authorship, contact, and copyright
+                information
+                in addition to navigational links and a link back to the top of the web page.</li>
+            <li>&#60;main&#62; A high-level element used to contain all of the content that is unique to a single web
+                page and not repeated across
+                multiple web pages.</li>
+            <li>&#60;nav&#62; An element to contain blocks of site navigation links. This element is typically placed in
+                the page header and footer,
+                and may also be used in an aside &#40;sidebar&#41; element as well.</li>
+            <li>&#60;section&#62; The section element is used to mark off sections of a document, such as chapters or
+                major sections of a long form post.</li>
+            <li>&#60;aside&#62; Use to identify content that is related to the main content on the page but not part of
+                the primary flow of the document.
+                For example, the aside element may contain a glossary definition of a term that appears in a blog post
+                or it may contain advertisements
+                related to the contents of the page.</li>
+            <li>&#60;article&#62; The article element is used to identify a block of content suitable for reuse and
+                syndication in other settings, such as
+                a blog post or technical article.</li>
+        </ul>
+        <h4>Textual Meaning: semantic elements to be used instead of the <it>span</it> tag:</h4>
+        <ul>
+            <li>&#60;em&#62; tags show the computer that this word or sentence has emphasis and it appears in italics.
+            </li>
+            <li>&#60;h1&#62; through &#60;h6&#62;: heading element tags are used to identify text that should appear as
+                a heading, with h1 being the most
+                important one, h2 less important, etc.</li>
+            <li>&#60;strong&#62; adds boldness to the text and is given extra importance.</li>
+            <li>&#60;mark&#62; is used to highlight text of specific importance. For example, to highlight the occurence
+                of a search word on a web page.</li>
+            <li>&#60;cite&#62; is used to identify the original work from which a bit of content originates.</li>
+            <li>&#60;blockquote&#62; or &#60;q&#62; elements are used to identify text that is a direct quotation from
+                another source.</li>
+            <li>&#60;time&#62;element can be used to tell browsers, web crawlers, and other smart devices that a
+                specific bit of content represents time
+                on a 24-hour clock or a specific calendar date.</li>
+        </ul>
+        <h4>Media Type: HTML5 has three tags that show what media type is involved:</h4>
+        <ul>
+            <li>&#60;audio&#62; Used to add one or more sources of audio content to a document and to allow the browser
+                to pick the best option based on the
+                visitor’s device and browser.</li>
+            <li>&#60;video&#62; Similar to the audio element but used to add video content to a markup document.</li>
+            <li>&#60;picture&#62; used to allow a web browser to pick the best image from the available options based on
+                the results of a media query.</li>
+        </ul>
+        <h4>Correlation tags: signal a correlation between multiple elements:</h4>
+        <ul>
+            <li>&#60;u1&#62; Unordered lists are used to signal a relationship between the items on the list and to
+                indicate that they do not need to be
+                understood in a specific order.</li>
+            <li>&#60;figure&#62; used to group together a piece of content, such as an image, chart, graph, or text, and
+                a caption marked off by
+                figcaption tags. By nesting the caption and the content between figure tags a relationship between the
+                nested elements is identified.</li>
+            <li>&#60;address&#62; This attribute is used to associate contact information with the parent element that
+                contains the address element.
+                For example, when added to an article, the address element provides contact information for the article
+                author, and when added to a web page
+                footer the address identifies contact information for the web page owner.</li>
+        </ul>
+        HTML has grown increasingly complex over the last several years, and it can be tempting to keep using div
+        elements with class and id attributes,
+        but the accessibility and interoperability promise of semantic HTML5 tags is reason enough to embrace these new
+        semantic elements.</p>
+
+        <h3>Headers</h3>
+        <p>Het gebruik van headers is belangrijk voor zoekmachines en de gebruikers van je website.</p>
+        <dt>11. Onderzoek en leg uit waarom headers zowel belangrijk zijn voor zoekmachines als voor de gebruikers.
+        </dt>
+        <dd>In de metadata in de HTML head sectie kun je een beschrijving toevoegen die wordt weergegeven als je pagina
+            in een search engine als zoekresultaat
+            naar voren komt. Dat schrijf je als &#60;meta name&#61;&#34;description&#34; content&#61;&#34;beschrijving
+            van je pagina&#34;&#62;
+            Maar hier gaat de vraag over headers. De header tag loopt van 1 tot 6, waarbij 1 de grootste en tegelijk ook
+            de belangrijkste header is.
+            h1 is de main heading, h2 de sub-heading, h3 de sub-sub-heading, etc. Gebruik bij voorkeur maar 1 h1 header
+            per pagina, gebruik de headers
+            in de juiste volgorde, en gebruik op 1 pagina liever niet meer dan 3 verschillende headers.
+            <br>Headers zijn van belang voor de gebruiker omdat die in eerste instantie vaak een website alleen scant
+            met zijn ogen en dus vooral op
+            de headers let. Als die ontbreken schrikt dat de gebruiker af. Daarnaast bestaat er voor mensen met beperkt
+            zicht de functie "screen reader", die
+            de gebruiker helpt om de site te navigeren dmv het voorlezen van de headings.
+            <br>Zoekmachines beschouwen de content van headers als belangrijke keywords om de search rankings van de
+            site te bepalen. Zonder headings doet
+            je pagina het slecht mbt SEO &#40;Search Engine Optimization&#41;.</dd>
+        <p>Voor het aanmaken van een text-header, in het Nederlands een subkop of kop, kan je gebruik maken van een
+            Header tag. Je kunt verschillende grootte koppen creëren.</p>
+        <dt>12. Onderzoek hoe je een text-header aanmaakt en reproduceer het volgende resultaat:</dt>
+        <dd>
+            <h1>Headings opdrachten</h1>
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+        </dd>
+        <h3>Paragrafen</h3>
+        <dt>13. Onderzoek wat een paragraaf tag is en hoe hij gebruikt wordt.
+            Geef hier een voorbeeld bij.</dt>
+        <dd>Een gestructureerde tekst bestaat uit kopjes/headings en paragrafen. De headings zijn hiervoor besproken. De
+            paragraaf tag is &#60;p&#62;.
+            Meestal staat onder elke heading een paragraaf. Dmv de headings cre&#235;er je een hierarchische structuur.
+            Paragrafen dragen bij
+            aan de structuur. Voorbeeld van een paragraaf: &#60;p&#62;I am a paragraph, oh yes I am.&#60;/p&#62;
+            Resultaat:
+            <p>I am a paragraph, oh yes I am.</p>
+        </dd>
+        <dt>14. Onderzoek en leg het verschil tussen het stoppen van alle tekst in één
+            paragraaf tag, en het opsplitsen van de tekst in meerdere tags uit.</dt>
+        <dd>Wanneer je alle tekst in 1 paragraaf tag plaatst, wordt het een doorlopende tekst zonder breaks, en dus
+            onoverzichtelijk. Door de stukjes
+            tekst in meerdere paragrafen te verdelen wordt het geheel overzichtelijker, er komen ruimtes tussen de
+            blokjes tekst. Bovendien
+            kun je dan de verschillende stukjes tekst niet verschillend opmaken, omdat het allemaal tot een en dezelfde
+            paragraaf behoort. Dus voor CSS en JavaScript
+            is het ook van belang om de tekst in paragrafen te verdelen.
+        </dd>
+        <br>
+        <dt>15. Reproduceer het volgende resultaat door gebruik te maken van text-headers
+            en de paragraaf tags.</dt>
+        <dd>
+            <h1>Mijn eerste website</h1>
+            <h2>Mijn eerste sub-kop</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur nostrum aperiam, quae dolorem
+                esse mollitia soluta corrupti accusantium sequi neque obcaecati odio corporis beatae. Quis iste id
+                assumenda nihil?</p>
+            <h2>Mijn tweede sub-kop</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum officiis mollitia vero ab laboriosam,
+                accusamus incidunt porro, voluptas possimus debitis eius consequuntur suscipit eum dolor hic sit natus
+                quia?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam facere harum non quod veniam delectus,
+                vero commodi ea nihil odit, mollitia veritatis, laboriosam voluptatem. Minus ducimus quibusdam autem
+                iure necessitatibus.</p>
+        </dd>
+        <h3>Horizontal rule</h3>
+        <p>We willen nu een footer toevoegen onderaan onze pagina. Onderzoek hoe een horizontal rule werkt en start aan
+            de onderstaande opdracht.</p>
+        <dt>16. Voeg een Horizontal rule toe en reproduceer het volgende resultaat.</dt>
+        <dd>
+            <h1>Mijn eerste website</h1>
+            <h2>Mijn eerste sub-kop</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit consequatur nostrum aperiam, quae dolorem
+                esse mollitia soluta corrupti accusantium sequi neque obcaecati odio corporis beatae. Quis iste id
+                assumenda nihil?</p>
+            <h2>Mijn tweede sub-kop</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex harum officiis mollitia vero ab laboriosam,
+                accusamus incidunt porro, voluptas possimus debitis eius consequuntur suscipit eum dolor hic sit natus
+                quia?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam facere harum non quod veniam delectus,
+                vero commodi ea nihil odit, mollitia veritatis, laboriosam voluptatem. Minus ducimus quibusdam autem
+                iure necessitatibus.</p>
+            <hr>
+            <h3>Footer</h3>
+            <p>Deze website is gebouwd vanuit de TechGrounds Academy</p>
+        </dd>
+        <h4>Link tags</h4>
+        <p>In onze footer willen we graag linken naar de TechGrounds website. Onderzoek hoe een link tag werkt.</p>
+        <dt>17. Voeg een link tag toe en reproduceer het volgende resultaat in de footer.
+        </dt>
+        <dd>
+            <h3>Footer</h3>
+            <p>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/#academy">TechGrounds Academy</a>.</p>
+        </dd>
+
+        <p>Zodra een gebruiker op de link klikt wordt de pagina weergegeven in de huidige browser window. Door gebruik
+            te maken van attributen kan de link geopend worden
+            in bijvoorbeeld een nieuw tabblad. Voorbeelden van HTML attributen zijn bijvoorbeeld een image tag die een
+            “alt” attribuut heeft.</p>
+        <dt>18. Onderzoek welke 4 attributen een link tag kan hebben, leg uit wat deze doen en voeg deze als voorbeeld
+            toe op je website.</dt>
+        <dd>Ik neem aan dat je de 4 waardes die de target attribute van de anchor tag kan hebben bedoelt? Zo ja:<br>
+            <ol>
+                <li><strong>_blank</strong>: link opent in een nieuw tabblad of window</li>
+                <li><strong>_parent</strong>: link opent in het "parent-frame"</li>
+                <li><strong>_self</strong>: opent de link in hetzelfde scherm &#40;default&#41;</li>
+                <li><strong>_top</strong>: link opent in the full body of the window</li>
+            </ol>
+            <br>
+            <hr>
+            <h3>Footer</h3>
+            <ol>
+                <li>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/#academy"
+                        target="_blank">TechGrounds Academy</a>.</li>
+                <li>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/#academy"
+                        target="_parent">TechGrounds Academy</a>.</li>
+                <li>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/#academy"
+                        target="_self">TechGrounds Academy</a>.</li>
+                <li>Deze website is gebouwd vanuit de <a href="https://techgrounds.nl/#academy"
+                        target="_top">TechGrounds Academy</a>.</li>
+            </ol>
+        </dd>
+    </dl>
+</body>
+
+</html>
