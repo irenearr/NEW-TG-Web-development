@@ -22,13 +22,17 @@
         </dt>
         <dd>
             <br>
-            <form>
-                <label for="achternaam">Achternaam</label>
-                <input type="text" id="achternaam" name="Achternaam" value="achternaam">
-                <br>
-                <br>
-                <label for="voornaam">Voornaam</label>
-                <input type="text" id="voornaam" name="Voornaam" value="voornaam">
+            <form style="width: 50%; background-color: lightgrey; padding: 5px;">
+                <fieldset>
+                    <legend><strong>Persoonsgegegevens</strong></legend>
+                    <br>
+                    <label for="achternaam">Achternaam</label>
+                    <input type="text" id="achternaam" name="Achternaam" placeholder="achternaam">
+                    <br>
+                    <br>
+                    <label for="voornaam">Voornaam</label>
+                    <input type="text" id="voornaam" name="Voornaam" placeholder="voornaam">
+                </fieldset>
             </form>
         </dd>
         <br>
@@ -38,19 +42,20 @@
             <ul>
                 <li>radiobutton <input type="radio" id="radio" value="klik"></li>
                 <li>checkbox <input type="checkbox" id="checkbox" value="klik"></li>
-                <li>password <input type="password" id="password" value="klik"></li>
+                <li>password <input type="password" id="password" placeholder="****"></li>
                 <li>reset <input type="reset" id="reset" value="klik"></li>
                 <li>submit <input type="submit" id="submit" value="klik"></li>
-                <li>date <input type="date" id="date" value="klik"></li>
-                <li>search <input type="search" id="search" value="klik"></li>
+                <li>date <input type="date" id="date" placeholder="klik"></li>
+                <li>search <input type="search" id="search" placeholder="Type search term here"></li>
                 <li>time <input type="time" id="time" value="klik"></li>
                 <li>hidden <input type="hidden" id="hidden" value="klik"></li>
-                <li>email <input type="email" id="email" value="klik"></li>
+                <li>email <input type="email" id="email" placeholder="example: johndoe@email.com"></li>
             </ul>
         </dd>
         <dt>3. Maak een input email field met een submit knop.
             tip: wat gebeurt er wanneer je op de submit knop clickt met een random text?</dt>
-        <dd><input type="email" id="email" value="klik"><input type="submit" id="submit" value="submit">
+        <dd><input type="email" id="email" placeholder="johndoe@email.com"><input type="submit" id="submit"
+                value="submit">
             <br>
             <br>
             Bij mij gebeurt er niks volgens mij?</dd>
@@ -59,35 +64,37 @@
             Bouw dit voorbeeld na.</dt>
         <dd>
             <div style="background-color: lightgrey; width: 50%; padding: 10px;">
-                <div style="border-style: solid; border-width: 1px;">
-                    <h3 style="margin: 0px;">Persoonsgegevens</h3>
-                    <br>
-                    <label for="achternaam">Achternaam</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
-                    <br>
-                    <br>
-                    <label for="voornaam">Voornaam</label>
-                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
-                    <br>
-                    <br>
-                    <label for="voornaam">Geboortedatum</label>
-                    <input type="date" id="voornaam" name="Voornaam" value="voornaam">
-                    <br>
-                    <br>
-                    <label for="voornaam">Man</label>
-                    <input type="radio" id="radio" value="klik"><label for="voornaam">Vrouw</label>
-                    <input type="radio" id="radio" value="klik">
-                    <br>
-                    <br>
-                    <label for="achternaam">Postcode</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="postcode">
-                    <br>
-                    <br>
-                    <label for="achternaam">Adres</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="adres">
-                    <br>
-                    <br>
-                </div>
+                <form>
+                    <fieldset>
+                        <legend><strong>Persoonsgegevens</strong></legend>
+                        <br>
+                        <label for="achternaam">Achternaam</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="achternaam">
+                        <br>
+                        <br>
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" id="voornaam" name="Voornaam" placeholder="voornaam">
+                        <br>
+                        <br>
+                        <label for="voornaam">Geboortedatum</label>
+                        <input type="date" id="voornaam" name="Voornaam">
+                        <br>
+                        <br>
+                        <label for="voornaam">Man</label>
+                        <input type="radio" id="radio" value="klik"><label for="voornaam">Vrouw</label>
+                        <input type="radio" id="radio">
+                        <br>
+                        <br>
+                        <label for="achternaam">Postcode</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="1010XX">
+                        <br>
+                        <br>
+                        <label for="achternaam">Adres</label>
+                        <input type="text" size="30" id="achternaam" name="Achternaam"
+                            placeholder="Hoofdstraat 1, Amsterdam">
+                        <br>
+                    </fieldset>
+                </form>
                 <br>
                 <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
             </div>
@@ -129,40 +136,41 @@
         </dt>
         <dd>
             <div style="background-color: lightgrey; width: 50%; padding: 10px;">
-                <div style="border-style: solid; border-width: 1px;">
-                    <h3 style="margin: 0px;">Reserveringsformulier</h3>
+                <form>
+                    <fieldset>
+                        <legend><strong>Reserveringsformulier</strong></legend>
+                        <br>
+                        <label for="achternaam">Achternaam</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="achternaam">
+                        <br>
+                        <br>
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" id="voornaam" name="Voornaam" placeholder="voornaam">
+                        <br>
+                        <br>
+                        <label for="achternaam">E-mail</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="e-mail">
+                        <br>
+                        <br>
+                        <label for="cars">Kies uw sport:</label>
+                        <select name="cars" id="cars">
+                            <option value="tafeltennis">Tafeltennis</option>
+                            <option value="badminton">Badminton</option>
+                            <option value="squash">Squash</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="voornaam">Datum en tijd</label>
+                        <input type="date" id="voornaam" name="Voornaam" value="datum"><input type="time" id="time"
+                            value="tijd">
+                        <br>
+                        <br>
+                        <input type="checkbox" id="checkbox"><label for="checkbox">Ik ga akkoord met de
+                            reserveringsvoorwaarden</label>
+                    </fieldset>
                     <br>
-                    <label for="achternaam">Achternaam</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
-                    <br>
-                    <br>
-                    <label for="voornaam">Voornaam</label>
-                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
-                    <br>
-                    <br>
-                    <label for="achternaam">E-mail</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="e-mail">
-                    <br>
-                    <br>
-                    <label for="cars">Kies uw sport:</label>
-                    <select name="cars" id="cars">
-                        <option value="tafeltennis">Tafeltennis</option>
-                        <option value="badminton">Badminton</option>
-                        <option value="squash">Squash</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="voornaam">Datum en tijd</label>
-                    <input type="date" id="voornaam" name="Voornaam" value="datum"><input type="time" id="time"
-                        value="tijd">
-                    <br>
-                    <br>
-                    <label for="checkbox">Ik ga akkoord met de reserveringsvoorwaarden</label>
-                    <input type="checkbox" id="checkbox" value="klik">
-                    <br>
-                </div>
-                <br>
-                <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
+                    <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
+                </form>
             </div>
         </dd>
         <br>
@@ -180,47 +188,50 @@
         </dt>
         <dd>
             <div style="background-color: lightgrey; width: 50%; padding: 10px;">
-                <div style="border-style: solid; border-width: 1px;">
-                    <h3 style="margin: 0px;">Reserveringsformulier</h3>
-                    <br>
-                    <label for="achternaam">Achternaam</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
-                    <br>
-                    <br>
-                    <label for="voornaam">Voornaam</label>
-                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
-                    <br>
-                    <br><label for="achternaam">Telefoonnummer</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="telefoonnummer">
-                    <br>
-                    <br>
-                    <label for="achternaam">E-mail</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="e-mail">
-                    <br>
-                    <br>
-                    <label for="achternaam">Naam van het boek</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="naam boek">
-                    <br>
-                    <br>
-                    <label for="cars">Aantal boeken:</label>
-                    <select name="cars" id="cars">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                    </select>
-                    <br>
-                    <br>
-                    <label for="voornaam">Datum en tijd</label>
-                    <input type="date" id="voornaam" name="Voornaam" value="datum"><input type="time" id="time"
-                        value="tijd">
-                    <br>
-                    <br>
-                    <label for="checkbox">Ik ga akkoord met de reserveringsvoorwaarden</label>
-                    <input type="checkbox" id="checkbox" value="klik">
-                    <br>
-                </div>
+                <form>
+                    <fieldset>
+                        <legend>
+                            <strong>Reserveringsformulier</strong>
+                        </legend>
+                        <br>
+                        <label for="achternaam">Achternaam</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="achternaam">
+                        <br>
+                        <br>
+                        <label for="voornaam">Voornaam</label>
+                        <input type="text" id="voornaam" name="Voornaam" placeholder="voornaam">
+                        <br>
+                        <br><label for="achternaam">Telefoonnummer</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="telefoonnummer">
+                        <br>
+                        <br>
+                        <label for="achternaam">E-mail</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="e-mail">
+                        <br>
+                        <br>
+                        <label for="achternaam">Naam van het boek</label>
+                        <input type="text" id="achternaam" name="Achternaam" placeholder="naam boek">
+                        <br>
+                        <br>
+                        <label for="cars">Aantal boeken:</label>
+                        <select name="cars" id="cars">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <br>
+                        <br>
+                        <label for="voornaam">Datum en tijd</label>
+                        <input type="date" id="voornaam" name="Voornaam" value="datum"><input type="time" id="time"
+                            value="tijd">
+                        <br>
+                        <br> <input type="checkbox" id="checkbox" value="klik">
+                        <label for="checkbox">Ik ga akkoord met de reserveringsvoorwaarden</label>
+                        <br>
+                    </fieldset>
+                </form>
                 <br>
                 <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
             </div>
@@ -228,29 +239,28 @@
         <br>
         <dt>9. Bouw nu zelf een formulier met wat je hiervoor hebt geleerd.</dt>
         <dd>
-            <div style="background-color: lightgrey; width: 50%; padding: 10px;">
-                <div style="border-style: solid; border-width: 1px;">
-                    <h3 style="margin: 0px;">Schrijf je in voor de nieuwsbrief!</h3>
-                    <br>
-                    <label for="achternaam">Achternaam</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="achternaam">
-                    <br>
-                    <br>
-                    <label for="voornaam">Voornaam</label>
-                    <input type="text" id="voornaam" name="Voornaam" value="voornaam">
-                    <br>
-                    <br>
-                    <label for="achternaam">E-mail</label>
-                    <input type="text" id="achternaam" name="Achternaam" value="e-mail">
-                    <br>
-                    <br>
-                    <input type="checkbox" id="checkbox" value="klik"><label for="checkbox">Ik ga akkoord met de
-                        voorwaarden</label>
-                    <br>
-                </div>
+            <div style="background-color:rgb(0, 255, 115); width: 30%; padding: 10px;">
+                <form>
+                <h3 style="margin: 0px;">Schrijf je in voor de nieuwsbrief!</h3>
+                <br>
+                <label for="achternaam">Achternaam</label>
+                <input type="text" id="achternaam" name="Achternaam" placeholder="Doe" size="40">
+                <br>
+                <br>
+                <label for="voornaam">Voornaam</label>
+                <input type="text" id="voornaam" name="Voornaam" placeholder="John" size="40">
+                <br>
+                <br>
+                <label for="achternaam">E-mail</label>
+                <input type="text" id="achternaam" name="Achternaam" placeholder="johndoe@email.com" size="40">
+                <br>
+                <br>
+                <input type="checkbox" id="checkbox" value="klik"><label for="checkbox">Ik ga akkoord met de
+                    voorwaarden</label>
+                <br>
                 <br>
                 <input type="submit" id="submit" value="submit"><input type="reset" id="reset" value="reset">
-            </div>
+            </form></div>
         </dd>
         <h1>HTML tables</h1>
         <dt>10. Om een tabel te maken heb je de volgende elementen nodig. Geef voor elke element een definitie.
