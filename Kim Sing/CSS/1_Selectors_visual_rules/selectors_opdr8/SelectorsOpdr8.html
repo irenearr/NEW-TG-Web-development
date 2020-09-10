@@ -20,12 +20,17 @@
         <dd>
             <ul>
                 <li>
-                    <strong>Cascade:</strong> dit is van belang wanneer er "conflicting rules" (tegenstrijdige regels)
-                    aanwezig zijn in je styling. Welke styling krijgt de voorkeur als er 2 styling regels op hetzelfde
-                    element van toepassing zijn? Cascading zit in de naam van CSS: Cascading Style Sheets. De cascade en
-                    het begrip specificiteit bepalen samen welke styling de overhand krijgt. Cascade houdt in dat
-                    wanneer twee regels een conflict hebben en zij dezelfde specificiteit hebben (bijv allebei een type
-                    selector zijn), dan zal de regel die later in de stylesheet staat bepalend zijn.
+                    <strong>Cascade:</strong> zit in de naam van CSS: Cascading Style Sheets. Het is van
+                    belang wanneer er "conflicting rules" (tegenstrijdige regels)
+                    aanwezig zijn in je styling, oftewel een <em>CSS conflict</em>. Welke styling krijgt de voorkeur als
+                    er 2 styling regels op hetzelfde
+                    element van toepassing zijn? De cascade en het begrip specificiteit bepalen samen welke styling de
+                    overhand krijgt. Cascade houdt in dat
+                    wanneer twee regels een conflict hebben en zij <em>dezelfde specificiteit</em> hebben (bijv allebei
+                    een type selector zijn), dan zal de regel die later in de stylesheet staat bepalend zijn. De
+                    volgorde is dus
+                    ook: externe styling, interne styling, inline styling, waarbij dus de inline styling later in het
+                    document staat dan de andere twee en dus de andere "overwrite".
                     <a
                         href="/Kim Sing/css/1_selectors_visual_rules/selectors_opdr8/CascadeVoorbeeld.html">Praktijkvoorbeeld</a>
                 </li>
@@ -37,12 +42,22 @@
                     <br><br>
                     <ul>
                         <li>Voorbeelden van CSS properties die inheritance vertonen:
-                        <em>color, font-family</em>
-                            </li>
+                            <br>
+                            <em>border-collapse, border-spacing, caption-side, color, cursor, direction, empty-cells,
+                                font (-size, -family, etc), letter-spacing, line-height, list-style, orphans, quotes,
+                                tab-size, text(-size, -align, etc), visibility, white-space, widows, word-break,
+                                word-spacing, word-wrap.</em>
+                        </li>
+                        <br>
                         <li>Voorbeelden van CSS properties zonder inheritance:
-                            <em>width</em>
-                             </li>
+                            <br>
+                            <em>background (-color, -image, etc), border (-color, -style, -widht, etc), clear, content,
+                                display, float, height, left, right, top, bottom, margin, outline, padding, width,
+                                z-index.</em>
+                        </li>
                     </ul>
+                    <br>
+                    <a href="https://www.w3.org/TR/CSS22/propidx.html">Volledige lijst</a>
                 </li>
             </ul>
         </dd>
