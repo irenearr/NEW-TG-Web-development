@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors opdr1</title>
+</head>
+
+<body>
+    <dl>
+        <dt>
+            <h3>Opdracht 1</h3>
+            Je kunt op 3 verschillende manieren CSS in je HTML inladen. Op welke 3 manieren kun je dat doen? Leg ook
+            voor elke wijze uit wat het precies inhoud.
+        </dt>
+        <dd>
+            <ol>
+                <li>
+                    <strong>Extern:</strong>
+                    in een apart css document bij voorkeur in dezelfde map als je html document, gekoppeld via een link
+                    in de head sectie van je html document. Het link element vertelt de browser dmv het rel attribute
+                    dat het om een styling sheet gaat, en de locatie staat in het href attribute.
+                    <br><br>
+                    <i>Voorbeeld:</i>
+                    <br><br>
+                    &#60;head&#62;
+                    <br>
+                    &#60;link rel&#61;&#34;stylesheet&#34; href&#61;&#34;style.css&#34;&#62;
+                    <br>
+                    &#60;/head&#62;
+                </li>
+                <br>
+                <li>
+                    <strong>Intern:</strong>
+                    binnenin hetzelfde HTML document, binnen een style element in de head sectie. Nadeel: dit is veel
+                    minder flexibel. Je hebt dan op elke pagina een eigen stylesheet, en als je een website maakt met
+                    meerdere pagina's worden veranderingen in styling heel veel werk. Gebruik bij voorkeur een externe
+                    stylesheet voor uniforme styling tussen webpagina's.
+                    <br><br>
+                    <i>Voorbeeld:</i>
+                    <br><br>
+                    &#60;head&#62;
+                    <br>
+                    &#60;style&#62;
+                    <br>
+                    h1 &#123;
+                    <br>
+                    color: blue;
+                    <br>
+                    &#125;
+                    <br>
+                    &#60;/style&#62;
+                    <br>
+                    &#60;/head&#62;
+                </li>
+                <br>
+                <li>
+                    <strong>Inline:</strong>
+                    zijn alleen van toepassing op een specifiek element en staat in een style attribute. Probeer geen
+                    inline styling te gebruiken! Dit is het tegenovergestelde van best practice.
+                    <br><br>
+                    <i>Voorbeeld:</i>
+                    <br><br>
+                    &#60;h1 style&#61;&#34;color: blue&#59;&#34;&#62;Blue heading&#60;/h1&#62;
+                    <br>
+                    <h1 style="color: blue;">Blue heading</h1>
+                </li>
+            </ol>
+        </dd>
+    </dl>
+
+</body>
+
+</html>

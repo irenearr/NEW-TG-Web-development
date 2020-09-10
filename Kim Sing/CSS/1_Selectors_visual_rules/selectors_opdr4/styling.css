@@ -1,0 +1,10 @@
+p {
+    color: darkblue
+}
+
+div {
+    color: green;
+    background: lightgrey;
+    padding: 5px;
+    width: 20%;
+}
