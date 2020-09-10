@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box model opdr3</title>
+    <style>
+        p {
+            background-color: green;
+            border: 2px solid black
+        }
+
+        span {
+            background-color: white;
+            width: 100px;
+            height: 50px;
+        }
+
+        div {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 3</h3>
+    <dl>
+        <dt>Wat gebeurt er als je een width en een height toevoegt aan de span tag van vorige opdracht?</dt>
+        <dd>Niets! width en height werken niet bij inline elements.</dd>
+    </dl>
+
+    <div>
+        <p>Dit is een block box en neemt de hele breedte in waardoor de volgende box op de volgende regel komt.</p>
+        <p>In dit block zit <span>inline tekst</span> wat dus niet op de volgende regel komt te <span>staan</span>.</p>
+    </div>
+</body>
+
+</html>
