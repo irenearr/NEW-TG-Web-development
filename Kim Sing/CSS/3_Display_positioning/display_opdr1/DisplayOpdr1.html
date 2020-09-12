@@ -1,19 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>display positioning opdr1</title>
 </head>
+
 <body>
     <h3>Opdracht 1</h3>
     <dl>
         <dt>
-            Welke position properties zijn er? Leg voor elke position property uit wat het doet. Geef ook aan welke default position waarde elementen hebben die je gebruikt in html.
+            Welke position properties zijn er? Leg voor elke position property uit wat het doet. Geef ook aan welke
+            default position waarde elementen hebben die je gebruikt in html.
         </dt>
-       <dd>
-           
-       </dd>
+        <br>
+        <dd>
+            <table style="border: 2px solid black; text-align: center;">
+                <thead>
+                    <tr>
+                        <th>"Position" <br><br> </th>
+                        <th>Beschrijving <br><br></th>
+                        <th>Normale flow <br><br></th>
+                        <th>Effect "top. bottom, left, right" <br><br></th>
+                        <th>Stacking context <br><br></th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Static</th>
+                        <td>dit is de default position waarde van HTML elementen. <br><br> </td>
+                        <td>Ja</td>
+                        <td>Nee</td>
+                        <td>Nee</td>
+                    </tr>
+                    <tr>
+                        <th>Relative</th>
+                        <td> het element wordt geplaatst relatief <i>t.o.v. zichzelf</i> oftewel t.o.v. zijn normale
+                            <br>
+                            positie. Andere elementen passen zich niet aan en laten alleen de ruimte over waar het <br>
+                            element normaal gesproken (bij static position) zou staan. <br><br> </td>
+                        <td>Ja</td>
+                        <td>Ja</td>
+                        <td>Ja, tenzij z-index = auto.</td>
+                    </tr>
+                    <tr>
+                        <th>Fixed</th>
+                        <td>het element wordt gepositioneerd t.o.v. het browser window. <br><br> </td>
+                        <td>Nee</td>
+                        <td>Ja</td>
+                        <td>Ja, altijd</td>
+                    </tr>
+                    <tr>
+                        <th>Absolute</th>
+                        <td>het element wordt gepositioneerd t.o.v. zijn dichtsbijzijnde (niet statische) ancestor
+                            element. <br> The margins of absolutely positioned boxes do not collapse with other margins.
+                            <br><br> </td>
+                        <td>Nee</td>
+                        <td>Ja</td>
+                        <td>Ja, tenzij z-index = auto.</td>
+                    </tr>
+                    <tr>
+                        <th>Sticky</th>
+                        <td>het element wordt gepositioneerd op basis van de scroll positie van de user. De positie
+                            wisselt <br>eigenlijk tussen relative en fixed, het begint relative maar als een bepaalde
+                            scroll
+                            positie <br>is bereikt dan "plakt" het eigenlijk vast op 1 plaats, zoals een fixed position
+                            element.
+                            <br><br>
+                        </td>
+                        <td>Ja</td>
+                        <td>Ja</td>
+                        <td>Nee</td>
+                    </tr>
+            </table>
+
+        </dd>
     </dl>
 </body>
+
 </html>
