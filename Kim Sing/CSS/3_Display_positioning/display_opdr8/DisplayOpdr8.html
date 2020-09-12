@@ -1,19 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>display position opdr8</title>
+    <style>
+        .card {
+            position: relative;
+            width: 500px;
+        }
+
+        .text {
+            position: relative;
+            text-align: left;
+        }
+
+        img {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 500px;
+        }
+
+        .front {
+            position: absolute;
+            background-color: yellow;
+            width: 400px;
+            top: 150px;
+            right: 50px;
+            padding-left: 100px;
+        }
+
+        .back {
+            position: absolute;
+            background-color: yellow;
+            width: 400px;
+            height: 36.67px;
+            top: 150px;
+            right: -50px;
+            padding-left: 50px;
+            z-index: -1;
+        }
+
+        p {
+            background-color: rgba(255, 255, 255, 0.7);
+            position: absolute;
+            top: 200px;
+            left: 40px;
+            width: 300px;
+        }
+    </style>
 </head>
+
 <body>
     <h3>Opdracht 8</h3>
     <dl>
         <dt>
             Maak het onderstaande na. Je mag zelf een image zoeken en gebruiken.
         </dt>
+        <br>
         <dd>
-            
+            <div class="card">
+
+                <img src="PeritoMorenoGlacier.jpg" alt="Glacier Perito Moreno">
+                <div class="text">
+                    <h1 class="front">Bbbrrrrr...</h1>
+                    <h1 class="back"></h1>
+                    <p>Super koud hier zeg!</p>
+                </div>
+
+            </div>
+
         </dd>
     </dl>
 </body>
+
 </html>
