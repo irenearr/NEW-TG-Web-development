@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelements opdr4</title>
+    <style>
+        button {
+            position: relative;
+            width: 700px;
+            height: 70px;
+            background-color: cadetblue;
+            text-align: center;
+            color: white;
+            border: none;
+            margin: 20px;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-bottom: 10px solid orange;
+            border-right: 10px solid orange;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        button::after {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border-top: 10px solid orange;
+            border-left: 10px solid orange;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 4</h3>
+    <dl>
+        <dt>
+            Hieronder vind je een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?
+        </dt>
+        <dd>
+            <button>
+                <h1>Button</h1>
+            </button>
+        </dd>
+    </dl>
+</body>
+
+</html>

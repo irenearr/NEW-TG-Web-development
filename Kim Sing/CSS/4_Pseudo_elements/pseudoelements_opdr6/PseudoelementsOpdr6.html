@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelements opdr6</title>
+    <style>
+        .circle {
+            width: 200px;
+            height: 200px;
+            font-size: 40px;
+            position: relative;
+            background: black;
+            border-radius: 50%;
+            text-align: center;
+            margin: 100px;
+            color: white;
+            display: inline-block;
+        }
+
+        .circle::before {
+            content: ".";
+            position: absolute;
+            background: black;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            left: -40px;
+            top: 65px;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            transform: rotate(0deg);
+            display: inline;
+        }
+
+        .circle::after {
+            content: ".";
+            position: absolute;
+            background: black;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            right: -40px;
+            top: 65px;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            transform: rotate(180deg);
+            display: inline;
+        }
+
+        p {
+            padding-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 6</h3>
+    <dl>
+        <dt>
+            Hieronder vind je wederom een voorbeeld van het gebruik van een pseudo-element. Kun jij dit namaken?
+        </dt>
+        <dd>
+
+            <div class="circle">
+                <p>1</p>
+            </div>
+
+            <div class="circle">
+                <p>2</p>
+            </div>
+
+            <div class="circle">
+                <p>3</p>
+            </div>
+
+        </dd>
+    </dl>
+</body>
+
+</html>
