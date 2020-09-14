@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox opdr9</title>
+    <style>
+        img {
+            height: 60%;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            background-color: lightgrey;
+            width: 1000px;
+            height: 400px;
+            padding: 20px;
+        }
+
+        .card {
+            height: 30%;
+            text-align: center;
+            font-size: 10pt;
+        }
+
+        .item {
+            margin-left: 10px;
+            margin-right: 10px;
+            background-color: white;
+        }
+
+        button {
+            color: white;
+            background-color: blue;
+            width: 100%;
+            height: 50px;
+        }
+
+        button:hover {
+            color: white;
+            background-color: limegreen;
+            width: 100%;
+            height: 50px;
+        }
+
+        h3 {
+            color: blue;
+        }
+
+        .title {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="title">Opdracht 9</h3>
+    <p>Zie het onderstaande voorbeeld en maak het na met flexbox. Zorg voor een leuk effect als je met de muis over de
+        ‘play’ knop heen gaat. Optioneel: gebruik .gif bestanden als images voor een levendig effect.
+    </p>
+    <br>
+    <div class="container">
+        <div class="item">
+            <img src="SuperMarioRun.jpeg" alt="Super Mario Run screengrab">
+            <div class="card">
+                <h3>Super Mario Run</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit repudiandae voluptas.
+                </p>
+                <button>Play Super Mario Run</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="SuperMarioHatSpin.jpeg" alt="Mario Maker screengrab">
+            <div class="card">
+                <h3>Mario Maker</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit repudiandae voluptas.
+                </p>
+                <button>Play Mario Maker</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="SuperMario3.png" alt="Super Mario 3 screengrab">
+            <div class="card">
+                <h3>Super Mario 3</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit repudiandae voluptas.
+                </p>
+                <button>Play Super Mario 3</button>
+            </div>
+        </div>
+        <div class="item">
+            <img src="SuperMarioYoshiland.jpeg" alt="Super Mario Yoshiland">
+            <div class="card">
+                <h3>Yoshy's Island</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam reprehenderit repudiandae voluptas.
+                </p>
+                <button>Play Yoshi's Island</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
