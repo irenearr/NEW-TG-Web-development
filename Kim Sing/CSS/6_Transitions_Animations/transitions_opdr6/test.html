@@ -4,94 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>transitions opdr6</title>
+    <title>test opdr6</title>
     <style>
-        .container {
-            display: inline-block;
-            width: 915px;
-            height: 320px;
-            background-color: seashell;
-            padding: 20px;
-            position: relative;
-        }
-
-        .container:hover .card {
-            color: rgb(202, 10, 10);
-        }
-
-        .card:hover {
-            color: white;
-        }
-
-        .card {
-            position: absolute;
-            background-color: grey;
-            color: white;
-            height: 300px;
-            width: 180px;
-            border: 2px solid black;
-            border-radius: 10%;
-            font-size: 16pt;
-            padding: 10px;
-            padding-left: 20px;
-            transition: color 0.5s, margin 0.5s;
-        }
-
-        .tophalf {
+        /*.tophalf {
             height: 50%;
+
         }
 
         .bottomhalf {
             height: 50%;
+        }*/
+
+        .container {
+            display: inline-block;
+            width: 620px;
+            height: 350px;
+            border: 1px solid black;
+            background: rgb(207, 204, 204);
+            margin: 50px;
+            position: relative;
+        }
+
+        .card {
+            width: 200px;
+            height: 300px;
+            background: grey;
+            border-radius: 10px;
+            border: 1px solid black;
+            position: absolute;
+            opacity: 0.8;
+            transition: top 0.3s, left 0.3s, opacity 0.3s;
+            text-align: center;
+        }
+
+        .card:nth-child(1) {
+            top: 30px;
+            left: 50px;
+        }
+
+        .card:nth-child(2) {
+            top: 30px;
+            left: 100px;
+        }
+
+        .card:nth-child(3) {
+            top: 30px;
+            left: 200px;
+        }
+
+        .card:nth-child(4) {
+            top: 30px;
+            left: 300px;
         }
 
         .card:nth-child(1):hover,
         .card:nth-child(2):hover,
         .card:nth-child(3):hover,
         .card:nth-child(4):hover {
-            margin-top: -10px;
-            color: white;
+            top: -10px;
+            opacity: 1;
         }
 
         .card:hover~.card:nth-child(1) {
-            margin-left: 100px;
+            left: 100px;
         }
 
         .card:hover~.card:nth-child(2) {
-            margin-left: 300px;
+            left: 250px;
         }
 
         .card:hover~.card:nth-child(3) {
-            margin-left: 500px;
+            left: 300px;
         }
 
         .card:hover~.card:nth-child(4) {
-            margin-left: 700px;
-        }
-
-        .card1 {
-            z-index: 1;
-        }
-
-        .card2 {
-            margin-left: 100px;
-            z-index: 2;
-        }
-
-        .card3 {
-            margin-left: 200px;
-            z-index: 3;
-        }
-
-        .card4 {
-            margin-left: 300px;
-            z-index: 4;
+            left: 400px;
         }
     </style>
 </head>
 
 <body>
-    <h3>Opdracht 6</h3>
+    <h3>test Opdracht 6</h3>
     <dl>
         <dt>
             Zie de onderstaande card deck. Kun jij deze zelf namaken? Je mag uiteraard weer je eigen creativiteit erop
@@ -100,7 +93,7 @@
         <br>
         <dd>
             <div class="container">
-                <div class="card card1">
+                <div class="card">
                     <div class="tophalf">
                         <p>Article Sept 16, <br> 2019</p>
                         <h2>Placeholder title</h2>
@@ -110,7 +103,7 @@
                             Author: <br> Kim Sing</p>
                     </div>
                 </div>
-                <div class="card card2">
+                <div class="card">
                     <div class="tophalf">
                         <p>Article Sept 16, <br> 2019</p>
                         <h2>Placeholder title</h2>
@@ -119,7 +112,7 @@
                         <p><br><br>Author: <br> Kim Sing</p>
                     </div>
                 </div>
-                <div class="card card3">
+                <div class="card">
                     <div class="tophalf">
                         <p>Article Sept 16, <br> 2019</p>
                         <h2>Placeholder title</h2>
@@ -128,7 +121,7 @@
                         <p><br><br>Author: <br> Kim Sing</p>
                     </div>
                 </div>
-                <div class="card card4">
+                <div class="card">
                     <div class="tophalf">
                         <p>Article Sept 16, <br> 2019</p>
                         <h2>Placeholder title</h2>
