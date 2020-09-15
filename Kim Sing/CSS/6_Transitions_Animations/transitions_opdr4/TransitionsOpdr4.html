@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions opdr4</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .box1 {
+            transition: top 2s, right 2s;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 2px solid black;
+            font-size: 20pt;
+            position: absolute;
+            top: 125px;
+            right: 260px;
+        }
+
+        .box2 {
+            transition: top 2s, left 2s;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 2px solid black;
+            font-size: 20pt;
+            position: absolute;
+            top: 125px;
+            left: 275px;
+        }
+
+        .box3 {
+            transition: bottom 2s, left 2s;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border: 2px solid black;
+            font-size: 20pt;
+            position: absolute;
+            bottom: 110px;
+            left: 275px;
+        }
+
+        .container:hover .box1 {
+            top: 0px;
+            right: 0px;
+        }
+
+        .container:hover .box2 {
+            top: 0px;
+            left: 0px;
+        }
+
+        .container:hover .box3 {
+            bottom: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 4</h3>
+    <dl>
+        <dt>
+            Je kunt op verschillende properties transitions aangeven. Zie hieronder een voorbeeld. Zoek uit op welke
+            properties de transitions zitten en maak het ongeveer hetzelfde na.
+        </dt>
+        <br>
+        <dd>
+            <div class="container">
+                <div class="box1">1</div>
+                <div class="box2">2</div>
+                <div class="box3">3</div>
+            </div>
+
+
+        </dd>
+    </dl>
+
+
+</body>
+
+</html>

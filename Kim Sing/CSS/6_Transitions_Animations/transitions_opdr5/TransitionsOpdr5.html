@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions opdr5</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 300px;
+            border: 2px solid black;
+            position: relative;
+        }
+
+        .box1 {
+            transition: background-color 2s ease-in-out;
+            transition-delay: 2s;
+            width: 150px;
+            height: 150px;
+            background-color: transparent;
+            border: 10px solid black;
+            position: absolute;
+            top: 0px;
+        }
+
+        .container:hover .box1 {
+            background-color: darkred;
+        }
+
+        .box2 {
+            transition: transform 2s ease-in-out, top 2s ease-in-out, left 2s ease-in-out;
+            width: 150px;
+            height: 150px;
+            transform: rotate(0deg);
+            background-color: darksalmon;
+            font-size: 20pt;
+            top: 10px;
+            left: 10px;
+            position: absolute;
+        }
+
+        .container:hover .box2 {
+            transform: rotate(45deg);
+            top: 120px;
+            left: 120px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Opdracht 5</h3>
+    <dl>
+        <dt>
+            Hieronder zie je wederom een voorbeeld van een transition. Je kunt op verschillende properties transitions
+            aangeven. Zoek uit op welke properties de transitions zitten en maak het na. Je eigen creativiteit gebruiken
+            is uiteraard toegestaan.
+        </dt>
+        <br>
+        <dd>
+            <div class="container">
+                <div class="box1">
+                    <img src="Pinguin.gif" alt="image">
+                </div>
+                <div class="box2"></div>
+            </div>
+        </dd>
+    </dl>
+</body>
+
+</html>
