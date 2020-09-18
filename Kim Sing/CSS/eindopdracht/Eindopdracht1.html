@@ -7,71 +7,207 @@
     <title>css eindopdracht 1</title>
     <link rel="stylesheet" href="Eindopdracht1Styling.css">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <a href="#home">HOME</a>
-        <a href="#menu">MENU</a>
-        <a href="#contact">CONTACT</a>
-    </nav>
-    <div class="header">
-        <div class="headercontent" id="home">
-            <h1>Cooking</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at viverra ex.</p>
-            <button>BUY</button>
-            <button>SHOW MORE</button>
-        </div>
-    </div>
-    <div class="popular">
-        <h1>Populaire gerechten</h1>
-        <div class="popularpasta">
-            <div class="popularpastacard">
-                <img src="dish1.jpg" alt="Pasta dish">
-                <div class="pastaprice">
-                    <p>Pasta</p>
-                    <p>8.99</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque praesentium, aperiam deserunt
-                    quidem quam placeat necessitatibus possimus excepturi tenetur!</p>
-                <button>Show...</button>
-            </div>
-            <div class="popularpastacard">
-                <img src="dish1.jpg" alt="Pasta dish">
-                <div class="pastaprice">
-                    <p>Pasta</p>
-                    <p>8.99</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque praesentium, aperiam deserunt
-                    quidem quam placeat necessitatibus possimus excepturi tenetur!</p>
-                <button>Show...</button>
-            </div>
-            <div class="popularpastacard">
-                <img src="dish1.jpg" alt="Pasta dish">
-                <div class="pastaprice">
-                    <p>Pasta</p>
-                    <p>8.99</p>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque praesentium, aperiam deserunt
-                    quidem quam placeat necessitatibus possimus excepturi tenetur!</p>
-                <button>Show...</button>
+    <header>
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#menu">MENU</a>
+            <a class="outline" href="#contact">CONTACT</a>
+        </nav>
+    </header>
+    <main>
+        <div class="herobanner" id="home">
+            <div class="bannercontent">
+                <h1>Cooking</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at viverra ex.</p>
+                <button>BUY</button>
+                <button>SHOW MORE</button>
             </div>
         </div>
-    </div>
+        <div class="popular">
+            <h1>Populaire gerechten</h1>
+            <div class="popularpasta">
+                <div class="popularpastacard">
+                    <img src="dish1.jpg" alt="Pasta dish">
+                    <div class="pastaprice">
+                        <h3>Pasta</h3>
+                        <p>8.99</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque praesentium, aperiam deserunt
+                        quidem quam placeat necessitatibus possimus excepturi tenetur!</p>
+                    <button>Show...</button>
+                </div>
+                <div class="popularpastacard">
+                    <img src="dish1.jpg" alt="Pasta dish">
+                    <div class="pastaprice">
+                        <h3>Pasta</h3>
+                        <p>8.99</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque praesentium, aperiam deserunt
+                        quidem quam placeat necessitatibus possimus excepturi tenetur!</p>
+                    <button>Show...</button>
+                </div>
+                <div class="popularpastacard">
+                    <img src="dish1.jpg" alt="Pasta dish">
+                    <div class="pastaprice">
+                        <h3>Pasta</h3>
+                        <p>8.99</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex atque praesentium, aperiam deserunt
+                        quidem quam placeat necessitatibus possimus excepturi tenetur!</p>
+                    <button>Show...</button>
+                </div>
+            </div>
+        </div>
 
-    <div class="pastas">
-        <h1 id="menu">Menu</h1>
-        <div class="pizzahorizontal">
-            <img src="chef1.webp" alt="Image Chef">
-            <div class="pizzavertical">
-                <div>
-                    <span></span>
-                    <span></span>
-                    <p></p>
+        <div class="pastas" id="menu">
+            <h1>Menu</h1>
+            <div class="pastahorizontal">
+                <div class="chef"></div>
+                <div class="pastavertical">
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                </div>
+                <div class="pastavertical">
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                </div>
+                <div class="pastavertical">
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
+                    <div class="pastacard">
+                        <div class="pastaprice">
+                            <h3>Pasta</h3>
+                            <p>$8.99</p>
+                        </div>
+                        <p class="pastacardtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
+                            distinctio accusamus dicta.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+    <footer id=contact>
+        <div>
+            <h3>Contact</h3>
+            <ul>
+                <li>Osdorpplein 16, 1234AB Amsterdam</li>
+                <li>Tel nr: 12345678</li>
+                <li>Openingstijden: ma t/m vr 10:00 - 22:00 uur</li>
+            </ul>
+            <div class="icons">
+                <i class="lni lni-instagram"></i>
+                <i class="lni lni-facebook-filled"></i>
+                <i class="lni lni-twitter-original"></i>
+            </div>
+        </div>
+        <div>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+        </div>
+    </footer>
 
 </body>
 
