@@ -1,0 +1,137 @@
+/* Achtergrond kleur: rgb(128, 179, 128)
+Text kleuren: rgb(97, 135, 216), rgb(128, 179, 128) */
+
+body {
+top: 50%;
+left: 50%;
+ font-family: Lobster;
+ background-color: rgb(128, 179, 128);
+ margin-top: 50px;
+ color: rgb(128, 179, 128);
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+margin: 5px;
+position: fixed;
+top: 0;
+width: 95%;
+background-color: rgb(128, 179, 128);
+}
+
+nav a {
+    text-decoration: none;
+    padding: 10px;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: 10%;
+    transition: background-color 0.5s ease, border 0.5s ease;
+}
+
+nav a:hover {
+    background-color: rgb(97, 135, 216);
+    border: 1px solid black;
+}
+
+.header {
+    height: 300px;
+    width: 100%;
+    background-image: url(cooking.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(97, 135, 216);
+}
+
+.headercontent {
+    width: 300px;
+    margin-left: 60%;
+    padding: 10px;
+}
+
+.header button {
+    font-family: Lobster;
+    width: 100px;
+    padding: 10px;
+    color: rgb(97, 135, 216);
+    transition: background-color 0.5s ease;
+}
+
+.header button:hover {
+    background-color:rgb(97, 135, 216);
+    color: black;
+}
+
+.popular {
+    text-align: center;
+    color: black;
+}
+
+.popularpasta {
+    display: flex;
+}
+
+.popularpasta img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.popularpasta p {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.popularpastacard {
+    margin: 20px;
+}
+
+.pastaprice {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 480px) {
+
+body {
+    margin-top: 60px;
+}
+
+nav {
+    justify-content: space-evenly;
+    font-size: 20pt;
+}
+
+.header {
+    height: 700px;
+}
+
+.headercontent {
+    margin-left: 5%;
+    text-align: center;
+}
+.header button {
+display: block;
+font-size: 20pt;
+width: 200px;
+height: 70px;
+margin: 10px;
+margin-left: 50px;
+
+}
+.header h1 {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 70pt;
+}
+
+.header p {
+    margin-top: 10px;
+    font-size: 20pt;
+}
+
+}
