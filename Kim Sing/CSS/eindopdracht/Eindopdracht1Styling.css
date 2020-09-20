@@ -130,9 +130,9 @@ margin-bottom: 60px;
 .pastaprice {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin-bottom: 0;
     margin-left: 20px;
-    padding: 0;
+    padding-bottom: 0;
 }
 
 .pastaprice h3 {
@@ -257,5 +257,61 @@ margin-left: 50px;
     margin-top: 10px;
     font-size: 20pt;
 }
+
+.popular h1 {
+    font-size: 60pt;
+    margin-bottom: 60px;
+    }
+
+    .popularpasta {
+        flex-direction: column;
+        align-items: center;
+       
+    }
+
+    .popularpasta img {
+        width: 80%;
+    }
+    
+
+    .popularpastacard {
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 16pt;
+    }
+
+    .popularpastacard button {
+        font-size: 16pt;}
+
+        .pastas h1 {
+            font-size: 70pt;
+            margin-top: 5%;
+            margin-bottom: 0%;
+        }
+        
+        .pastavertical {
+            width: 100%;
+            margin-bottom: 0%;
+        }
+        
+        .pastahorizontal {
+            flex-direction: column;
+        }
+
+        .pastacard {
+            font-size: 16pt;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        footer {
+            flex-direction: column;
+            width: 90%;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+            font-size: 16pt;
+            margin-bottom: 100px;
+        }
 
 }
