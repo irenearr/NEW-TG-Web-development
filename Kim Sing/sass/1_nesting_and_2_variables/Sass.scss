@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 
 $translucent-white: rgba(255, 255, 255, 0.3);
+$icon-square-length: 300px;
+$standard-border: 4px solid black;
 
 h1 {
   font-family: Roboto, sans-serif;
@@ -16,7 +18,7 @@ h1 {
 
   .slogan {
     position: absolute;
-    border: 4px solid rgb (0, 0, 0);
+    border: $standard-border;
     top: 200px;
     left: 25%;
     width: 50%;
@@ -29,6 +31,15 @@ h1 {
       line-height: 200px;
     }
   }
+
+  & button {
+    background-color: yellow;
+    display: block;
+    margin-left: 37%;
+    margin-top: 10%;
+    padding: 3%;
+    font-family: "Pacifico", cursive;
+  }
 }
 
 .container {
@@ -38,10 +49,12 @@ h1 {
   .icon {
     display: inline-block;
     margin: 2%;
-    border: 4px solid black;
+    border: $standard-border;
     font-size: 32px;
+    width: $icon-square-length;
+    height: $icon-square-length;
   }
   img {
-    width: 25%;
+    width: $icon-square-length;
   }
 }

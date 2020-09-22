@@ -135,17 +135,10 @@ nav a {
   .main {
     display: flex;
   }
-
-  .page-title {
-    text-align: left;
-    flex: 1;
-  }
-
   .page-description {
     text-align: left;
     flex: 1;
   }
-
   .gallery {
     flex: 3;
   }

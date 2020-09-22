@@ -1,0 +1,27 @@
+button {
+  background-color: #C47A39;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 5%;
+  -webkit-transition-property: background-color, border;
+  transition-property: background-color, border;
+  font-size: 16pt;
+}
+
+button:hover {
+  background-color: #F6A030;
+  border: 5px solid black;
+  -webkit-transition: 0.5s ease, 0.5s ease;
+  transition: 0.5s ease, 0.5s ease;
+}
+
+button {
+  background-color: #2bbde2;
+}
+
+button:hover {
+  background-color: lightblue;
+}
+/*# sourceMappingURL=styles.css.map */

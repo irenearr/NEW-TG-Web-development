@@ -1,0 +1,9 @@
+@import "./assets/_buttons";
+@import "./assets/_colors";
+
+button {
+    background-color: rgb(43, 189, 226);
+&:hover {
+    background-color: lightblue;
+}
+}

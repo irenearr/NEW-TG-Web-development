@@ -1,0 +1,29 @@
+button {
+  background-color: brown;
+  color: cornsilk;
+  padding: 15px;
+  font-size: 16pt;
+}
+
+button:hover {
+  background-color: cornsilk;
+  color: brown;
+}
+
+div {
+  background-color: brown;
+  border: 1px solid cornsilk;
+  width: 100px;
+  height: 100px;
+  margin-top: 100px;
+  -webkit-transition-property: background-color, border;
+  transition-property: background-color, border;
+}
+
+div:hover {
+  background-color: cornsilk;
+  border: 5px solid brown;
+  -webkit-transition: 0.5s ease, 0.5s ease;
+  transition: 0.5s ease, 0.5s ease;
+}
+/*# sourceMappingURL=styles.css.map */
