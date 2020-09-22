@@ -96,32 +96,57 @@ nav a {
 
 /* If screen size is 480px wide, or less, set the font-size of <div> page-title to 270px */
 @media screen and (max-width: 480px) {
-    .page-title {
-      width: 270px;
-    }
+  .page-title {
+    width: 270px;
   }
+}
 
-  @media screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
-    .gallery-item .thumbnail {
-        width: 95%;
-    }
-    .logo {rotate: 90deg;}
+@media screen and (min-width: 320px) and (max-width: 480px),
+  (orientation: portrait) {
+  .gallery-item .thumbnail {
+    width: 95%;
   }
-
-  @media screen and (min-resolution: 150dpi) {
-    .logo {
-        background-image: url("spaceship2.png");}
+  .logo {
+    rotate: 90deg;
   }
+}
 
-  @media screen and (max-resolution: 150dpi) and (max-width: 480px) {
-      .page-description {
-          font-size: 20px;}
-      }
+@media screen and (min-resolution: 150dpi) {
+  .logo {
+    background-image: url("spaceship2.png");
+  }
+}
 
-      @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media screen and (max-resolution: 150dpi) and (max-width: 480px) {
+  .page-description {
+    font-size: 20px;
+  }
+}
+
+/* @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 .page-title,
         .page-description {
           float: left;
           max-width: 50%;
         }
-      }
+      } */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .main {
+    display: flex;
+  }
+
+  .page-title {
+    text-align: left;
+    flex: 1;
+  }
+
+  .page-description {
+    text-align: left;
+    flex: 1;
+  }
+
+  .gallery {
+    flex: 3;
+  }
+}
