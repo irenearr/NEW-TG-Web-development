@@ -2,8 +2,6 @@
 Text kleuren: rgb(97, 135, 216), rgb(128, 179, 128) */
 
 body {
-  /* top: 50%;
-left: 50%; */
   font-family: Lobster;
   background-color: rgb(128, 179, 128);
   margin-top: 45px;
@@ -45,7 +43,6 @@ nav a:hover {
   height: 300px;
   width: 100%;
   background-image: url(cooking.jpg);
-
   background-repeat: no-repeat;
   background-size: cover;
   background-color: black;

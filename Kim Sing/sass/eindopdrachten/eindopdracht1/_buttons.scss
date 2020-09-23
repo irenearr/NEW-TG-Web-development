@@ -1,0 +1,33 @@
+@import "_colors";
+
+.button1 {
+  font-family: Lobster;
+  width: 100px;
+  padding: 10px;
+  color: $kleur2;
+  border: 1px solid $kleur1;
+  background-color: transparent;
+  transition: background-color 0.5s ease, border 0.5s ease;
+
+  &:hover {
+    background-color: $kleur2;
+    color: $kleur1;
+    border: none;
+  }
+}
+
+.button2 {
+  margin-right: 20px;
+  margin-left: auto;
+  display: block;
+  border: none;
+  border-radius: 20%;
+  padding: 5px;
+  background-color: transparent;
+  font-family: Lobster;
+  transition: background-color 0.5s ease;
+
+  &:hover {
+    background-color: $kleur2;
+  }
+}
