@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 16</title>
+</head>
+<body>
+    <p>Opdracht 16</p>
+    <script>
+        const sentence = 'returns a new string consisting of the single code unit located at the specified offset into the string.';
+        const index = 6;
+        console.log(`The character at index ${index} is ${sentence.charAt(index)}`);
+        // charAt geeft een nieuwe string bestaand uit een enkele letter op de gespecificeerde index cijfer
+        const str1 = 'Hoi';
+        const str2 = 'Wereld';
+        console.log(str1.concat(' ', str2));
+        // De methode concat () voegt de stringargumenten samen met de aanroepende string en retourneert een nieuwe string.
+        const str = 'The quick brown fox jumps over the lazy dog.';
+        console.log(str.slice(31));
+        // expected output: "the lazy dog."
+        console.log(str.slice(4, 19));
+        // expected output: "quick brown fox"
+        // De methode slice () neemt een sectie van een string en retourneert deze als een nieuwe string, zonder de originele string te wijzigen.
+        const words = str.split(' ');
+        console.log(words[3]);
+        // expected output: "fox"
+        const chars = str.split('');
+        console.log(chars[8]);
+        // expected output: "k"
+        const strCopy = str.split();
+        console.log(strCopy);
+        // expected output: Array ["The quick brown fox jumps over the lazy dog."]
+        // The split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.
+        const str3 = 'Mozilla';
+        console.log(str3.substr(1, 2));
+        // expected output: "oz"
+        console.log(str3.substr(2));
+        // expected output: "zilla"
+        // The substr() method returns a portion of the string, starting at the specified index and extending for a given number of characters afterwards.
+    </script>
+</body>
+</html>

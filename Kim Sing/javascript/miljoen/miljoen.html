@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miljoenenjacht</title>
-    <link rel="stylesheet" href="miljoen.css">
     <style>
         body {
   margin: 0;
@@ -88,8 +87,9 @@ button {
 .b:last-child:hover {
   cursor: pointer;
   background-color: rgb(255, 183, 0);
+  transition: opacity .3s;
 }
-.b:first-child:active .b:first-child:active,
+.b:first-child:active,
 .b:nth-child(2):active,
 .b:nth-child(3):active,
 .b:nth-child(4):active,
@@ -114,9 +114,10 @@ button {
 .b:nth-child(23):active,
 .b:nth-child(24):active,
 .b:nth-child(25):active,
-.b:last-child:hover {
+.b:last-child:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+  
 }
 #k1,
 #k3,
@@ -136,10 +137,8 @@ button {
   top: 0;
   right: 0;
   bottom: 0;
-  transition: left 2s, opacity 2s;
+  transition: left 1s, opacity 1s;
   transition-timing-function: ease-in;
-  /* animation-duration: 4s; */
-  /* animation-name: left; */
 }
 #k2,
 #k4,
@@ -159,10 +158,152 @@ button {
   top: 0;
   right: 0;
   bottom: 0;
-  transition: left 2s, opacity 2s;
+  transition: left 1s, opacity 1s;
   transition-timing-function: ease-in;
 }
+/* 
+#k1::before,
+#k3::before,
+#k5::before,
+#k7::before,
+#k9::before,
+#k11::before,
+#k13::before,
+#k15::before,
+#k17::before,
+#k19::before,
+#k21::before,
+#k23::before,
+#k25::before,
+#k2::before,
+#k4::before,
+#k6::before,
+#k8::before,
+#k10::before,
+#k12::before,
+#k14::before,
+#k16::before,
+#k18::before,
+#k20::before,
+#k22::before,
+#k24::before,
+#k26::before {
+  content: "";
+  position: absolute;
+  background-color: goldenrod;
+  left: 0;
+  top: 1vh;
+  right: 0;
+  bottom: 0;
+}
+
+#k1::before
+ {
+  content: "€ 0.01";
+}
+#k2::before
+ {
+  content: "€ 0.20";
+}
+#k3::before
+ {
+  content: "€ 0.50";
+}
+#k4::before
+ {
+  content: "€ 1";
+}
+#k5::before
+ {
+  content: "€ 5";
+}
+#k6::before
+ {
+  content: "€ 10";
+}
+#k7::before
+ {
+  content: "€ 20";
+}
+#k8::before
+ {
+  content: "€ 50";
+}
+#k9::before
+ {
+  content: "€ 100";
+}
+#k10::before
+ {
+  content: "€ 250";
+}
+#k11::before
+ {
+  content: "€ 1.000";
+}
+#k12::before
+ {
+  content: "€ 2.500";
+}
+#k13::before
+ {
+  content: "€ 5.000";
+}
+#k14::before
+ {
+  content: "€ 10.000";
+}
+#k15::before
+ {
+  content: "€ 20.000";
+}
+#k16::before
+ {
+  content: "€ 30.000";
+}
+#k17::before
+ {
+  content: "€ 40.000";
+}
+#k18::before
+ {
+  content: "€ 50.000";
+}
+#k19::before
+ {
+  content: "€ 100.000";
+}
+#k20::before
+ {
+  content: "€ 250.000";
+}
+#k21::before
+ {
+  content: "€ 500.000";
+}
+#k22::before
+ {
+  content: "€ 750.000";
+}
+#k23::before
+ {
+  content: "€ 1.000.000";
+}
+#k24::before
+ {
+  content: "€ 2.000.000";
+}
+#k25::before
+ {
+  content: "€ 2.500.000";
+}
+#k26::before
+ {
+  content: "€ 5.000.000";
+} */
+
     </style>
+    
 
 </head>
 
@@ -226,15 +367,51 @@ button {
         </div>
     </div>
     <script>
-        window.onbeforeunload = function myFunction() {
-  var txt;
-  if (confirm("Welkom bij Miljoenen Jacht!, druk op Ok om te beginnen")) {
-    txt = "Veel succes!";
-  } else {
-    txt = "Jammer!";
-  }
-  document.getElementById("demo").innerHTML = txt;
+
+for (var a = [], i = 0; i < 26; ++i) a[i] = i;
+
+function shuffle(array) {
+    var tmp, current, top = array.length;
+    if (top) while (--top) {
+        current = Math.floor(Math.random() * (top + 1));
+        tmp = array[current];
+        array[current] = array[top];
+        array[top] = tmp;
+    }
+    return array;
 }
+
+a = shuffle(a);
+
+
+document.getElementById("k1").innerHTML = a[0];
+document.getElementById("k2").innerHTML = a[1];
+document.getElementById("k3").innerHTML = a[2];
+document.getElementById("k4").innerHTML = a[3];
+document.getElementById("k5").innerHTML = a[4];
+document.getElementById("k6").innerHTML = a[5];
+document.getElementById("k7").innerHTML = a[6];
+document.getElementById("k8").innerHTML = a[7];
+document.getElementById("k9").innerHTML = a[8];
+document.getElementById("k10").innerHTML = a[9];
+document.getElementById("k11").innerHTML = a[10];
+document.getElementById("k12").innerHTML = a[11];
+document.getElementById("k13").innerHTML = a[12];
+document.getElementById("k14").innerHTML = a[13];
+document.getElementById("k15").innerHTML = a[14];
+document.getElementById("k16").innerHTML = a[15];
+document.getElementById("k17").innerHTML = a[16];
+document.getElementById("k18").innerHTML = a[17];
+document.getElementById("k19").innerHTML = a[18];
+document.getElementById("k20").innerHTML = a[19];
+document.getElementById("k21").innerHTML = a[20];
+document.getElementById("k22").innerHTML = a[21];
+document.getElementById("k23").innerHTML = a[22];
+document.getElementById("k24").innerHTML = a[23];
+document.getElementById("k25").innerHTML = a[24];
+document.getElementById("k26").innerHTML = a[25];
+
+
 
 
 function my1() {
