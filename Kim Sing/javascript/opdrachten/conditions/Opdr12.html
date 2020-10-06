@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions opdr12</title>
+</head>
+<body>
+<p>Opdracht 12</p>
+
+        <input type="number" name="number" id="number">
+        <button id="btn" onclick="checkNumber ()"> Button </button>
+        <div>
+            <span id="label"></span>
+        </div>
+        <script>
+            function checkNumber() {
+                let number = document.getElementById ("number").value;
+                if (number == 21 || number == 23) {
+                    document.getElementById("label").innerHTML = "Het ingevoerde getal is 21 of 23.";
+                }
+                else if ((number > 30 && number < 35) || (number > 40 && number < 45)) {
+                    document.getElementById("label").innerHTML = "Het ingevoerde getal ligt tussen de 30 en 35 of tussen de 40 en 40.";
+                }
+            }
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 6</title>
+</head>
+<body>
+    <p>Opdracht 6</p>
+    <p>De ! in een javascript code staat voor "not", dus je kan het gebruiken om te declareren dat iets != not equal to is.</p>
+
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber ()"> Button </button>
+    <div>
+        <span id="label"></span>
+    </div>
+    <script>
+        function checkNumber() {
+            let number = document.getElementById ("number").value;
+            if (number != 3) {
+                document.getElementById("label").innerHTML = "Het ingevoerde getal is niet gelijk aan 3";}
+        else {document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan 3";}
+        }
+    </script>
+</body>
+</html>

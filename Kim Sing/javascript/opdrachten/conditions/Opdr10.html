@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions opdr10</title>
+</head>
+<body>
+<p>Opdracht 10</p>
+
+        <input type="number" name="number" id="number">
+        <button id="btn" onclick="checkNumber ()"> Button </button>
+        <div>
+            <span id="label"></span>
+        </div>
+        <script>
+            function checkNumber() {
+                let number = document.getElementById ("number").value;
+                if (number >= 13 && number <= 20) {
+                    document.getElementById("label").innerHTML = "Het ingevoerde getal is gelijk aan of groter dan 13 en gelijk aan of kleiner dan 20.";
+                }
+            }
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions opdr11</title>
+</head>
+<body>
+<p>Opdracht 11</p>
+
+        <input type="number" name="number" id="number">
+        <button id="btn" onclick="checkNumber ()"> Button </button>
+        <div>
+            <span id="label"></span>
+        </div>
+        <script>
+            function checkNumber() {
+                let number = document.getElementById ("number").value;
+                if (number == 21 || number == 23) {
+                    document.getElementById("label").innerHTML = "Het ingevoerde getal is 21 of 23.";
+                }
+            }
+        </script>
+    
+</body>
+</html>
