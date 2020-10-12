@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdracht 5</title>
+</head>
+
+<body>
+    <p>Opdracht 5</p>
+    <input id="entry" type="text">
+    <p id="answer"></p>
+    <button onclick="controlList ()">Check name</button>
+    <button onclick="randomNameCreator()">Random name</button>
+    <script>
+        const namesList = ['John', 'john', 'Olly', 'olly', 'Mo', 'mo', 'Hendrik', 'hendrik', 'Tony', 'tony'];
+        const namesList2 = ['John', 'Olly', 'Mo', 'Hendrik', 'Tony', 'Irus', 'Jan', 'Peter'];
+
+        function randomNameCreator() {
+           let randomIndexWaarde = Math.round(Math.random()*7);
+            console.log(randomIndexWaarde);
+            let randomName = namesList2[randomIndexWaarde];
+            document.getElementById('entry').value = randomName;
+        }
+
+        function controlList() {
+            let input = document.getElementById('entry').value;
+
+            if (namesList.includes(input)) {
+                document.getElementById('answer').innerHTML = input + ' is bekend in ons systeem.';
+            }
+            else {
+                document.getElementById('answer').innerHTML = input + ' is onbekend in ons systeem.';
+            }
+        }
+console.log(Math.round(Math.random()*7));
+console.log(Math.floor(Math.random()*8));
+    </script>
+</body>
+
+</html>

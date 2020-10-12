@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opdr7</title>
+</head>
+
+<body>
+    <p>Opdracht 7</p>
+    <p>Rest parameters in een functie schrijf je met 3 puntjes ervoor (...args). Dit betekent dat alle arguments die later worden gegeven, worden weergegeven als een array. De rest parameters staan apart in een array, los van de "expliciete" parameters, zoals (a, b, ...args).</p>
+    <script>
+
+        function adder(num1, num2) {
+            console.log(num1 + num2);
+        }
+        adder(5, 10);
+        adder(6, 9);
+
+        function adder2(num1, num2, ...theArgs) {
+            console.log(num1 + num2);
+            console.log(theArgs);
+            console.log(num1 + num2 + theArgs)
+        }
+        adder2(3, 7, 12, 25, 46, 2, 3, 9);
+
+    </script>
+</body>
+
+</html>
