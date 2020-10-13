@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arrays</title>
+</head>
+<body>
+    <p>Arrays</p>
+    <p>
+        <ul>
+            <li>Push: een item toevoegen aan de array</li>
+            <li>Pop: laatste item verwijderen uit de array</li>
+            <li>Shift: eerste item verwijderen uit de array</li>
+            <li>Slice: selecteert elementen uit een array (die je aangeeft met begin en eind getal), en geeft die weer als een nieuwe array. De nieuwe array begint bij het start argument, maar eindigt voor het eind argument (niet incl). Je moet wel een nieuwe variabele aanmaken voor deze nieuwe array.</li>
+            <li>Splice: adds/removes items to/from an array, and returns the removed item(s). Note: This method changes the original array.</li>
+            <li>Sort: zet de array op (alfabetische) volgorde.</li>
+        </ul>
+    </p>
+    <script>
+        let numbers = []
+        numbers = [5, 3, 9, 13, 2, 7, 22, 4, 8, 1];
+        console.log(numbers);
+
+        let fruit = [];
+        fruit = ["apple", "pear", "mango", "strawberry", "pineapple"];
+        console.log(fruit);
+        console.log(fruit[0]);
+        console.log(fruit[3]);
+
+        let selectNumber = numbers[Math.round(Math.random()*9)];
+        console.log(selectNumber);
+        console.log(selectNumber % 5);
+        console.log(fruit[selectNumber % 5]);
+
+        fruit.push("kiwi");
+        fruit.pop();
+        // fruit.shift();
+       let fruitSelect = fruit.slice(1, 4);
+
+       fruit.splice(2, 0, "lemon", "banana");
+       fruit.sort();
+        console.log(fruitSelect);
+
+        console.log(fruit.length);
+
+        fruit.splice(4, 1, "orange");
+
+// fruits 6 en 3 omdraaien
+
+        let temp = fruit[3];
+        fruit[3] = fruit[6];
+        fruit[6] = temp;   
+
+        console.log(fruit);
+
+    </script>
+</body>
+</html>

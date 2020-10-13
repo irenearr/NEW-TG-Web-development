@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scopes opdr4</title>
+</head>
+<body>
+    <p>Opdracht 4</p>
+    <p>Volvo v40</p>
+    <script>
+         function printCar() {
+           carBrand = "Volvo";
+ 
+           return function(type) {
+               console.log(carBrand + " " + type);
+           }
+       }
+ 
+       const car = printCar();
+       car("v40");
+
+    </script>
+</body>
+</html>
