@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <div id="answer"></div>
+    <script>
+
+        const sports = ["voetbal", "basketbal", "volleybal", "hockey", "honkbal", "zwemmen", "korfbal"];
+
+        // opdracht 1
+
+        for (let i = 0; i < sports.length; i++) {
+            console.log(sports[i]);
+        }
+
+        // opdracht 2
+
+        for (let i = 0; i < 21; i++)
+            if (i % 2 === 0) {
+                console.log(i);
+            }
+
+        // opdracht 3            
+
+        for (let i = 0; i < sports.length; i++)
+            if (i % 2 === 0) {
+                console.log(i);
+                console.log(sports[i]);
+            }
+
+        // opdracht 4
+
+        let i = 0;
+
+        while (i < sports.length) {
+            console.log(sports[i]); i++;
+        }
+
+        // opdracht 5
+
+        const obj = { a: "voetbal", b: "basketbal", c: "volleybal", d: "hockey", e: "honkbal", f: "zwemmen", g: "korfbal" }
+
+        for (const prop in obj) {
+            console.log(`obj.${prop} = ${obj[prop]}`);
+        }
+
+        // opdracht 6
+
+        for (const element of sports) {
+            console.log(element);
+        }
+
+       
+    </script>
+</body>
+
+</html>

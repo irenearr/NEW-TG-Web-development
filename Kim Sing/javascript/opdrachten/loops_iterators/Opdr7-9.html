@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops opdr7-9 </title>
+</head>
+
+<body>
+    <script>
+
+        // let i = 0;
+        // while (i < 3) {
+        //     i++;
+        //     {
+        //         for (a = 1; a < 11; a++) {
+        //             console.log(a);
+        //         }
+        //         for (a = 0; a < 21; a++) {
+        //             if (a % 2 == 0)
+        //                 console.log(a);
+        //         }
+        //         for (a = 0; a < 31; a++) {
+        //             if (a % 3 == 0)
+        //                 console.log(a);
+        //         }
+        //         break
+        //     }
+        // }
+
+        //opdracht 7 alternatief
+
+        // while (i < 3) {
+        //     i++;
+        //     {
+        //         for (a = 1; a < 11; a++) {
+        //             console.log(a);
+        //         }
+        //         for (a = 0; a < 21; a+=2) {
+        //                 console.log(a);
+        //         }
+        //         for (a = 0; a < 31; a+=3) {
+        //                 console.log(a);
+        //         }
+        //         break
+        //     }
+        // }
+
+        // opdracht 7
+        console.log("opdracht 7")
+
+        let i = 0;
+        while (i < 3) {
+            i++;
+            {
+                for (let a = i; a < i * 11; a += i) {
+                    console.log(a);
+                }
+            }
+        }
+
+        // opdracht 8
+        console.log("opdracht 8")
+
+        let a = 0, b = 1, c = 1;
+
+        for (i = 0; i < 50; i++) {
+            c = a + b;
+
+            a = b;
+            b = c;
+            console.log(c);
+        }
+
+// opdracht 9
+console.log("opdracht 9")
+
+let arr = [2, 7, 5, 10, 4, 9, 3, 1, 8, 6];
+        let sorted = false
+        while (!sorted) {
+            sorted = true
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < arr[i - 1]) {
+                    let temp = arr[i];
+                    arr[i] = arr[i - 1];
+                    arr[i - 1] = temp;
+                    sorted = false;
+                }
+            }
+        }
+        console.log(arr);
+    </script>
+</body>
+
+</html>
