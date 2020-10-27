@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rekenmachine</title>
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="horizontal"><input type="text" id="display"></div>
+        <div class="flexgrid">
+            <div class="buttonlayout"><button onclick="display7()">7</button></div>
+            <div class="buttonlayout"><button onclick="display4()">4</button></div>
+            <div class="buttonlayout"><button onclick="display1()">1</button></div>
+            <div class="buttonlayout"><button onclick="displayC()">C</button></div>
+            <div class="buttonlayout"><button onclick="display8()">8</button></div>
+            <div class="buttonlayout"><button onclick="display5()">5</button></div>
+            <div class="buttonlayout"><button onclick="display2()">2</button></div>
+            <div class="buttonlayout"><button onclick="display0()">0</button></div>
+            <div class="buttonlayout"><button onclick="display9()">9</button></div>
+            <div class="buttonlayout"><button onclick="display6()">6</button></div>
+            <div class="buttonlayout"><button onclick="display3()">3</button></div>
+            <div class="buttonlayout"><button onclick="displaydot()">.</button></div>
+            <div class="buttonlayout"><button onclick="displaydivide()">:</button></div>
+            <div class="buttonlayout"><button onclick="displaymultiply()">x</button></div>
+            <div class="buttonlayout"><button onclick="displaysubtract()">-</button></div>
+            <div class="buttonlayout"><button onclick="displayadd()">+</button></div>
+            <div class="buttonlayout"><button onclick="displaymodulo()">%</button></div>
+            <div class="buttonlayout"><button onclick="displayplusminus()">+/-</button></div>
+            <div class="buttonlayout"><button onclick="displaycalculate()" id="buttoncalculate">=</button></div>
+        </div>
+    </div>
+
+    <script>
+
+        let verzameldeInput = "";
+
+        function display0() {
+            document.getElementById("display").value = verzameldeInput + "0";
+            verzameldeInput = verzameldeInput + "0";
+            console.log(verzameldeInput);
+        }
+
+        function display1() {
+            document.getElementById("display").value = verzameldeInput + "1";
+            verzameldeInput = verzameldeInput + "1";
+            console.log(verzameldeInput);
+        }
+
+        function display2() {
+            document.getElementById("display").value = verzameldeInput + "2";
+            verzameldeInput = verzameldeInput + "2";
+            console.log(verzameldeInput);
+        }
+
+        function display3() {
+            document.getElementById("display").value = verzameldeInput + "3";
+            verzameldeInput = verzameldeInput + "3";
+            console.log(verzameldeInput);
+        }
+
+        function display4() {
+            document.getElementById("display").value = verzameldeInput + "4";
+            verzameldeInput = verzameldeInput + "4";
+            console.log(verzameldeInput);
+        }
+
+        function display5() {
+            document.getElementById("display").value = verzameldeInput + "5";
+            verzameldeInput = verzameldeInput + "5";
+            console.log(verzameldeInput);
+        }
+
+        function display6() {
+            document.getElementById("display").value = verzameldeInput + "6";
+            verzameldeInput = verzameldeInput + "6";
+            console.log(verzameldeInput);
+        }
+
+        function display7() {
+            document.getElementById("display").value = verzameldeInput + "7";
+            verzameldeInput = verzameldeInput + "7";
+            console.log(verzameldeInput);
+        }
+
+        function display8() {
+            document.getElementById("display").value = verzameldeInput + "8";
+            verzameldeInput = verzameldeInput + "8";
+            console.log(verzameldeInput);
+        }
+
+        function display9() {
+            document.getElementById("display").value = verzameldeInput + "9";
+            verzameldeInput = verzameldeInput + "9";
+            console.log(verzameldeInput);
+        }
+
+        function displaydot() {
+            document.getElementById("display").value = verzameldeInput + ".";
+            verzameldeInput = verzameldeInput + ".";
+            console.log(verzameldeInput);
+        }
+
+        function displayadd() {
+            document.getElementById("display").value = verzameldeInput + "+";
+            verzameldeInput = verzameldeInput + "+";
+            console.log(verzameldeInput);
+        }
+
+        function displaysubtract() {
+            document.getElementById("display").value = verzameldeInput + "-";
+            verzameldeInput = verzameldeInput + "-";
+            console.log(verzameldeInput);
+        }
+
+        function displaymultiply() {
+            document.getElementById("display").value = verzameldeInput + "x";
+            verzameldeInput = verzameldeInput + "*";
+            console.log(verzameldeInput);
+        }
+
+        function displaydivide() {
+            document.getElementById("display").value = verzameldeInput + ":";
+            verzameldeInput = verzameldeInput + "/";
+            console.log(verzameldeInput);
+        }
+
+        function displaymodulo() {
+            document.getElementById("display").value = verzameldeInput + "%";
+            verzameldeInput = verzameldeInput + "%";
+            console.log(verzameldeInput);
+        }
+
+        function displayplusminus() {
+            document.getElementById("display").value = "-"+verzameldeInput;
+            verzameldeInput = verzameldeInput * -1;
+            console.log(verzameldeInput);
+        }
+
+        function displayC() {
+            document.getElementById("display").value = "";
+            verzameldeInput = "";
+            console.log(verzameldeInput);
+        }
+
+        function displaycalculate() {
+            let y
+            try{
+            y = eval(verzameldeInput);
+            document.getElementById("display").value = y;
+            } catch(e){
+            console.log(verzameldeInput.charAt(verzameldeInput.length-1));
+            let z = verzameldeInput.charAt(verzameldeInput.length-1);
+               if (z === '+' || z === '-' || z === '*' || z === '/' ) {
+                  y = eval(verzameldeInput + verzameldeInput.slice(0, verzameldeInput.length-1));
+                  document.getElementById("display").value = y;
+               }
+            }
+            verzameldeInput = y;
+            console.log(verzameldeInput);
+            console.log(y);
+        }
+        
+// modulo delen door 1 is integer of een breuk
+// to fixed
+
+// border box shadow css
+
+    </script>
+
+</body>
+
+</html>
