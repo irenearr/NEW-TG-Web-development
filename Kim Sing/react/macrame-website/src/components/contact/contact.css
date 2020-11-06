@@ -1,0 +1,13 @@
+.contact {
+  min-height: 100vh;
+  color: #3c3c3c;
+  padding-top: 50px;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}

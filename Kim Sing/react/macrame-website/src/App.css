@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.app {
+  min-height: 10vh;
+  /* background-color: #1ea0c3; */
+  /* background-color: #7bdcb5; */
+  background-color: #b9d6d1;
+  color: #3c3c3c;
+}
+
+.logo {
+  max-height: 7vh;
+  margin: 0;
+  position: fixed;
+  right: 0;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.menubar {
+  display: flex;
+  justify-content: center;
+}
+
+.menuTekst {
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+}

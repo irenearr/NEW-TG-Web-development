@@ -1,0 +1,14 @@
+.herobanner {
+  font-family: "Domaine";
+  color: #3c3c3c;
+  margin: 0;
+}
+
+.textShadow {
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+img {
+  max-height: 80vh;
+  margin: auto;
+}

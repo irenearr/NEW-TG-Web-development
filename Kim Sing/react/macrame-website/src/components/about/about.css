@@ -1,0 +1,27 @@
+.about {
+  min-height: 100vh;
+  margin: 50px;
+  color: #3c3c3c;
+  padding-top: 30px;
+}
+
+body {
+  background-color: #b9d6d1;
+}
+
+.aboutContent {
+  display: flex;
+}
+
+.pageTitle {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.imageRound {
+  width: 20%;
+  margin-right: 8%;
+}
