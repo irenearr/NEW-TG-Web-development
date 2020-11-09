@@ -1,5 +1,5 @@
 .about {
-  min-height: 100vh;
+  min-height: 150vh;
   margin: 50px;
   color: #3c3c3c;
   padding-top: 30px;
@@ -10,7 +10,10 @@ body {
 }
 
 .aboutContent {
-  display: flex;
+  font-size: 1.5rem;
+  text-align: right;
+  font-family: "Domaine";
+  /* display: flex; */
 }
 
 .pageTitle {
@@ -21,7 +24,23 @@ body {
   margin-bottom: 50px;
 }
 
-.imageRound {
+.imageRound1 {
   width: 20%;
   margin-right: 8%;
+  float: right;
+}
+
+.imageRound2 {
+  width: 20%;
+  float: left;
+  margin: 3%;
+  margin-left: 8%;
+  margin-top: 1%;
+}
+
+
+.aboutParagraph {
+  margin-left: 8%;
+  margin-right: 8%;
+  float: none;
 }
