@@ -32,7 +32,6 @@ import image31 from "./images/plant-hanger-30.jpg";
 import image32 from "./images/plant-hanger-31.JPG";
 import image33 from "./images/plant-hanger-32.JPG";
 import image34 from "./images/plant-hanger-33.jpg";
-// import image35 from "./images/plant-hanger-34.jpg";
 import image36 from "./images/plant-hanger-35.jpg";
 import image37 from "./images/plant-hanger-36.jpg";
 import image38 from "./images/plant-hanger-37.jpg";

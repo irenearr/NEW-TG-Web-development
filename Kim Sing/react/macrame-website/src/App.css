@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  font-family: "Domaine";
+}
 .app {
   min-height: 10vh;
   /* background-color: #1ea0c3; */

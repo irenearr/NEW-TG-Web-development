@@ -9,6 +9,7 @@ import img5 from "../../images/IMG_6462.jpg";
 
 const herobanner = () => (
   <div className="herobanner">
+    <div className="container">
     <Carousel>
       <Carousel.Item>
         <img className="d-block w-6" src={img1} alt="First slide" />
@@ -58,6 +59,7 @@ const herobanner = () => (
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   </div>
 );
 

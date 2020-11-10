@@ -1,5 +1,5 @@
 .about {
-  min-height: 150vh;
+  min-height: 120vh;
   margin: 50px;
   color: #3c3c3c;
   padding-top: 30px;
@@ -11,7 +11,7 @@ body {
 
 .aboutContent {
   font-size: 1.5rem;
-  text-align: right;
+  text-align: justify;
   font-family: "Domaine";
   /* display: flex; */
 }
@@ -25,22 +25,21 @@ body {
 }
 
 .imageRound1 {
-  width: 20%;
-  margin-right: 8%;
+  width: 22%;
+  margin: 3%;
+  margin-right: 0%;
   float: right;
 }
 
 .imageRound2 {
-  width: 20%;
+  width: 25%;
   float: left;
   margin: 3%;
-  margin-left: 8%;
   margin-top: 1%;
 }
 
 
 .aboutParagraph {
-  margin-left: 8%;
-  margin-right: 8%;
+
   float: none;
 }

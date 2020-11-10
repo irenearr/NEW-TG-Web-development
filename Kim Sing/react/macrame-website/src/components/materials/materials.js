@@ -9,6 +9,7 @@ import img5 from "../../images/IMG_6462.jpg";
 
 const materials = () => (
   <div className="materials">
+    <div className="container">
     <div id={"materials"}></div>
     <p className="pageTitle">Materials & designs</p>
     <Carousel className="my-5">
@@ -58,6 +59,7 @@ const materials = () => (
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   </div>
 );
 
