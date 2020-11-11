@@ -20,6 +20,7 @@ const about = () => (
         To relax from the tedious work I needed to break away from it all through festivals (as I mentioned before), but also handicrafts. Working with your hands is a great way to quiet your mind a little. I've done different things such as painting and sculpturing, but my most recent distraction is macram&#233;. It's so easy to learn and you can make beautiful things with it! Combined with my love for plants, I started to make macram&#233; plant holders right here at my home in Amsterdam. The result is what you see on this site, lots and lots of different designs and using all kinds of materials. I hope you'll enjoy browsing, feel free to contact me with any questions! Find my contact information at the bottom of the page. {" "}
       </p>
       </div>
+      <hr />
     </div>
   </div>
 );

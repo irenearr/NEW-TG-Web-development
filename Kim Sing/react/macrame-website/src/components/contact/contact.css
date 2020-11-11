@@ -1,34 +1,52 @@
 .contact {
-  min-height: 150vh;
+  min-height: 100vh;
   color: #3c3c3c;
   text-align: left;
+  text-align: center;
 }
 
 .pageTitleContact {
   font-size: 3rem;
   font-weight: 400;
   letter-spacing: 5px;
-  padding-top: 60px;
+  padding-top: 1%;
   margin-bottom: 50px;
-  margin-left: 50%;
   text-align: center;
 }
 
 .contactList {
   font-size: 1.5rem;
   list-style-type: none;
-  text-align: left;
+  /* text-align: center; */
 }
 
 .contactText {
-  margin-left: 50%;
   font-family: "Domaine";
   font-size: 1rem;
-  text-align: left;
+  /* text-align: center; */
 }
 
 .contactDiv {
   background-image: url(../assortment/images/plant-hanger-34.jpg);
   background-size: cover;
   height: 100vh;
+  padding-top: 1%;
+}
+
+.contactFrame {
+  background-color: white;
+  margin: 10%;
+  margin-top: 4%;
+  margin-left: 55%;
+  text-align: left;
+  padding: 5%;
+  width: 40%;
+}
+
+.icons {
+  margin: 2%;
+}
+
+td {
+  padding-right: 10px;
 }

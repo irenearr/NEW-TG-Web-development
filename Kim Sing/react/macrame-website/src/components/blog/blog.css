@@ -1,7 +1,8 @@
 .blog {
-  min-height: 100vh;
+  min-height: 50vh;
   color: #3c3c3c;
   padding-top: 50px;
+  text-align: center;
 }
 
 .pageTitle {
@@ -13,5 +14,5 @@
 }
 
 .blogImage {
-  width: 30%;
+  width: 50%;
 }

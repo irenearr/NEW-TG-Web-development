@@ -5,10 +5,12 @@ import Image from "react-bootstrap/Image";
 
 const tutorials = () => (
   <div className="tutorials">
+    <div className="container">
     <div id={"tutorials"}></div>
     <p className="pageTitle">Tutorials</p>
-    <Image src={drama} fluid />
-  </div>
+    <Image className="tutorialsImage" src={drama} fluid />
+    <hr />
+  </div></div>
 );
 
 export default tutorials;

@@ -3,6 +3,7 @@
   margin: 50px;
   color: #3c3c3c;
   padding-top: 30px;
+  text-align: center;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
   font-size: 1.5rem;
   text-align: justify;
   font-family: "Domaine";
-  /* display: flex; */
 }
 
 .pageTitle {
@@ -40,6 +40,5 @@ body {
 
 
 .aboutParagraph {
-
   float: none;
 }

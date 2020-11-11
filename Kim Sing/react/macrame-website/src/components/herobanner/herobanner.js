@@ -16,7 +16,7 @@ const herobanner = () => (
         <Carousel.Caption>
           <h3 className="textShadow">Natural materials</h3>
           <p className="textShadow">
-            Pure and simple, made with all natural jute rope.
+            Pure and simple, made with all natural jute rope
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -26,7 +26,7 @@ const herobanner = () => (
         <Carousel.Caption>
           <h3 className="textShadow">So many levels</h3>
           <p className="textShadow">
-            Custom-made for one, two, three pots or anything you can imagine.
+            Custom-made for one, two, three pots or anything you can imagine
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -36,7 +36,7 @@ const herobanner = () => (
         <Carousel.Caption>
           <h3 className="textShadow">It's in the details</h3>
           <p className="textShadow">
-            Handmade by own design with an eye for detail.
+            Handmade by own design with an eye for detail
           </p>
         </Carousel.Caption>
       </Carousel.Item>
@@ -54,11 +54,12 @@ const herobanner = () => (
         <Carousel.Caption>
           <h3 className="textShadow">Made in Amsterdam</h3>
           <p className="textShadow">
-            All plant hangers are handmade at home in the centre of Amsterdam.
+            All plant hangers are handmade at my home in the centre of Amsterdam
           </p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    <hr />
     </div>
   </div>
 );

@@ -1,6 +1,7 @@
 .tutorials {
   min-height: 100vh;
   padding-top: 50px;
+  text-align: center;
 }
 
 .pageTitle {
@@ -9,4 +10,8 @@
   letter-spacing: 5px;
   margin-top: 30px;
   margin-bottom: 50px;
+}
+
+.tutorialsImage {
+  width: 40%;
 }

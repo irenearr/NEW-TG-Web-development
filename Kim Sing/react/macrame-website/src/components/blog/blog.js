@@ -4,10 +4,12 @@ import img6 from "../../images/IMG_1906.JPG";
 
 const blog = () => (
   <div className="blog">
+    <div className="container">
     <div id={"blog"}></div>
     <p className="pageTitle">Blog</p>
     <img className="blogImage" src={img6} alt="blogImage" />
-  </div>
+    <hr />
+  </div></div>
 );
 
 export default blog;
