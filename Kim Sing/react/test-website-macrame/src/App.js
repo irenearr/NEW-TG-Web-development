@@ -21,20 +21,20 @@ function App () {
     {name: "Renske Pietersen", message: "React is leuk!"}
   ]);
 
-  // const increment = () => {
-  //   setCount (count + 1);
-  //   setRed (!isRed);
-  // }
+  const increment = () => {
+    setCount (count + 1);
+    setRed (!isRed);
+  }
 /* ? staat voor if en : staat voor else, 'red' staat voor de .red opmaak in css en '' betekent geen opmaak. ! staat voor het tegenovergestelde van wat het nu is, dus als het nu true is wordt het false en andersom */
-  // return <div className="app">
-  //   <h1 className={isRed ? 'red' : ''}>Change my color!</h1>
-  //   <button onClick={increment}>increment</button>
-  //   <h1>{count}</h1>
-  //   <Tweet name="Jan Stok" message="This is a random tweet"/>
-  //   <Tweet name="Ruben Terlou" message="Langs de oevers van de Yangtse"/>
-  //   <Tweet name="Marie Bos" message="Mijn kitten is een snoepje"/>
-  //   <Tweet name="Renske Pietersen" message="React is leuk!"/>
-  // </div>
+  return <div className="app">
+    <h1 className={isRed ? 'red' : ''}>Change my color!</h1>
+    <button onClick={increment}>increment</button>
+    <h1>{count}</h1>
+    <Tweet name="Jan Stok" message="This is a random tweet"/>
+    <Tweet name="Ruben Terlou" message="Langs de oevers van de Yangtse"/>
+    <Tweet name="Marie Bos" message="Mijn kitten is een snoepje"/>
+    <Tweet name="Renske Pietersen" message="React is leuk!"/>
+  </div>
 
   return <div className="app">
     {users.map(user =>(
